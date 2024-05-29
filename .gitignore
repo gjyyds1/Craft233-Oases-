@@ -41,3 +41,8 @@ plugins/CoreProtect/database.db
 plugins/SlimefunTranslation/translations/
 plugins/Terra/addons/
 plugins/TrChat/
+plugins/Brewery/data.yml
+plugins/HuskHomes/HuskHomesData.db
+plugins/WkKit/config.yml
+plugins/mcMMO/flatfile/mcmmo.users
+
