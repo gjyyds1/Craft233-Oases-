@@ -1,8 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri May 10 18:05:45 CST 2024
-xsdlib-2013.6.1.jar>https\://maven.aliyun.com/repository/public/=
-xsdlib-2013.6.1.jar>https\://repo1.maven.org/maven2/=
-xsdlib-2013.6.1.jar>repo52=
-xsdlib-2013.6.1.pom>https\://maven.aliyun.com/repository/public/=
-xsdlib-2013.6.1.pom>https\://repo1.maven.org/maven2/=
-xsdlib-2013.6.1.pom>repo52=

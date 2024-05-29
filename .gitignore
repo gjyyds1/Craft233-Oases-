@@ -33,3 +33,11 @@ usercache.json
 version_history.json
 whitelist.json
 plugins/CoreProtect/database.db
+**/tmp/
+**/lib/
+**/Caches/
+**/defaults/
+**/Backup/
+plugins/SlimefunTranslation/translations/
+plugins/Terra/addons/
+plugins/TrChat/
