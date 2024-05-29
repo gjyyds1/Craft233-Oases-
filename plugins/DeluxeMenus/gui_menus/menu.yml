@@ -1,0 +1,102 @@
+menu_title: '&e&lCraft233 - Oases 菜单'
+open_command: 
+  - menu
+  - cd
+size: 54
+items:
+  '10':
+    material: ITEM_FRAME
+    slot: 10
+    display_name: '&e签到'
+    lore:
+      - '&f点击打开签到页面'
+    left_click_commands:
+      - '[player] litesignin gui'
+    right_click_commands:
+      - '[player] litesignin gui'
+  '13':
+    material: GRASS_BLOCK
+    slot: 13
+    display_name: '&e世界传送'
+    lore:
+      - '&f传送到不同的世界'
+    left_click_commands:
+      - '[player] worldto'
+    right_click_commands:
+      - '[player] worldto'
+  '16':
+    material: WHITE_BED
+    slot: 16
+    display_name: '&e家'
+    lore:
+      - '&f打开家的列表'
+      - '&f私人&公共地点'
+    left_click_commands:
+      - '[player] homemenu'
+    right_click_commands:
+      - '[player] homemenu'
+  '19':
+    material: JUKEBOX
+    slot: 19
+    display_name: '&eMusicBox'
+    lore:
+      - '&f播放NBT格式的歌曲'
+    left_click_commands:
+      - '[player] musicbox'
+    right_click_commands:
+      - '[player] musicbox'
+  '22':
+    material: ENCHANTED_BOOK
+    slot: 22
+    display_name: '&e疯狂附魔'
+    lore:
+      - '&f一款更多附魔提供'
+    left_click_commands:
+      - '[player] ce'
+    right_click_commands:
+      - '[player] ce'
+  '25':
+    material: MAP
+    slot: 25
+    display_name: '&emcMMOView'
+    lore:
+      - '&f可视化的mcMMO菜单'
+    left_click_commands:
+      - '[player] mcmmoview open '
+    right_click_commands:
+      - '[player] mcmmoview open '
+  '28':
+    material: IRON_AXE
+    slot: 28
+    display_name: '&e一键砍树'
+    lore:
+      - '&f一键砍树的开关'
+      - '&f具体状态看提示'
+      - '&fdisable表示关闭'
+      - '&fenable表示开启'
+    left_click_commands:
+      - '[player] tc toggle '
+    right_click_commands:
+      - '[player] tc toggle '
+  '31':
+    material: SLIME_BLOCK
+    slot: 31
+    display_name: '&e粘液科技指南'
+    lore:
+      - '&f粘液科技指南GUI面板'
+    left_click_commands:
+      - '[player] sf open_guide'
+    right_click_commands:
+      - '[player] sf open_guide'
+  '34':
+    material: CHEST
+    slot: 34
+    display_name: '&e商店'
+    lore:
+      - '&f传送到商店？'
+      - '&f打开售卖商店？'
+      - '&f查询商品价格？'
+    left_click_commands:
+      - '[player] shopmenu'
+    right_click_commands:
+      - '[player] shopmenu'

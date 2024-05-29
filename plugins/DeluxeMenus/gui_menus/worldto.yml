@@ -1,0 +1,104 @@
+open_command:
+  - 'worldto'
+size: 27
+menu_title: '&e世界传送'
+items:
+  '主世界':
+    material: GRASS_BLOCK
+    date: 1
+    slot: 2
+    display_name: "&a主世界"
+    lore: 
+      - "&e传送到主世界(World)"
+    left_click_commands:
+      - '[player] huskhomes:warp world'
+    right_click_commands:
+      - '[player] huskhomes:warp world'
+  '下界世界':
+    material: NETHERRACK
+    date: 1
+    slot: 10
+    display_name: "&a下界世界"
+    lore: 
+      - "&e传送到下界(nether)"
+    left_click_commands:
+      - '[player] huskhomes:warp nether'
+    right_click_commands:
+      - '[player] huskhomes:warp nether'
+
+  '终末之地':
+    material: END_STONE
+    date: 0
+    slot: 20
+    display_name: "&a终末之地"
+    lore: 
+      - "&e传送到末地(the_end)"
+    left_click_commands:
+      - '[player] huskhomes:warp end'
+    right_click_commands:
+      - '[player] huskhomes:warp end'
+
+  '资源主世界':
+    material: Dirt_Path
+    date: 1
+    slot: 6
+    display_name: "&a资源:主世界"
+    lore: 
+      - "&e传送到资源世界(resource)"
+      - "&c 不定时重置"
+    left_click_commands:
+      - '[player] huskhomes:warp resource'
+    right_click_commands:
+      - '[player] huskhomes:warp resource'
+
+  '资源下界':
+    material: Nether_Quartz_Ore
+    date: 1
+    slot: 16
+    display_name: "&a资源:下界"
+    lore:
+      - "&e传送到资源的下界世界"
+      - "&c 不定时重置"
+    left_click_commands:
+      - '[player] huskhomes:warp resource_nether'
+    right_click_commands:
+      - '[player] huskhomes:warp resource_nether'
+
+  '资源末地':
+    material: Chorus_flower
+    date: 1
+    slot: 24
+    display_name: "&a资源:末地"
+    lore:
+      - "&e传送到资源的末地世界"
+      - "&c 不定时重置"
+    left_click_commands:
+      - '[player] huskhomes:warp resource_end'
+    right_click_commands:
+      - '[player] huskhomes:warp resource_end'
+
+  '经验岛':
+    material: Glowstone
+    date: 1
+    slot: 13
+    display_name: "&a经验岛"
+    lore: 
+      - "&e一个小岛？"
+      - "&e可挂机获得经验"
+    left_click_commands:
+      - '[player] huskhomes:warp exp'
+    right_click_commands:
+      - '[player] huskhomes:warp exp'
+
+
+  'back':
+    material: WHITE_STAINED_GLASS_PANE
+    date: 1
+    slot: 18
+    display_name: "&e返回上一级"
+    right_click_commands:
+      - "[player] cd"
+    left_click_commands:
+      - "[player] cd"
+
+sweet: true

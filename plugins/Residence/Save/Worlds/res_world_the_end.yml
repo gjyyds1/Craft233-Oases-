@@ -1,0 +1,190 @@
+Messages:
+  1:
+    LeaveMessage: 下次再见！这里是%residence
+    EnterMessage: 欢迎大大来到%owner的领地%residence,Have fun！
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: true
+    bed: false
+    door: true
+    note: true
+    egg: true
+    use: true
+    anvil: true
+    decay: true
+    animalkilling: false
+    button: true
+    lavaflow: true
+    bank: false
+    hook: false
+    explode: true
+    cake: true
+    vehicledestroy: false
+    flow: true
+    table: true
+    chorustp: true
+    harvest: false
+    shear: false
+    firespread: false
+    piston: true
+    destroy: true
+    pvp: false
+    lever: true
+    pressure: true
+    enderpearl: true
+    dye: true
+    feed: true
+    beacon: false
+    trade: true
+    build: true
+    dragongrief: false
+    anchor: false
+    enchant: true
+    tnt: true
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  3:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  4:
+    container: true
+    ignite: false
+    damage: false
+    waterflow: true
+    use: false
+    icemelt: false
+    animalkilling: false
+    healing: true
+    iceform: true
+    hook: false
+    mobexpdrop: true
+    explode: false
+    vehicledestroy: false
+    wspeed2: true
+    harvest: false
+    move: true
+    mobitemdrop: true
+    shear: false
+    firespread: false
+    piston: false
+    destroy: false
+    monsters: true
+    pvp: false
+    enderpearl: false
+    feed: true
+    mobkilling: true
+    build: false
+    tnt: false
+    leash: false
+    pistonprotection: false
+    tp: true
+    creeper: false
+  5:
+    container: false
+    ignite: false
+    damage: false
+    use: false
+    animalkilling: false
+    healing: true
+    hook: false
+    explode: false
+    witherdestruction: false
+    vehicledestroy: false
+    harvest: false
+    witherdamage: true
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: true
+    build: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+Residences:
+  end:
+    TPLoc: 100.9:49.0:0.5:-9.3:91.05
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        b1153850-1625-3654-b5bd-cf65452507a9: 1
+      AreaFlags: 2
+      OwnerUUID: b1153850-1625-3654-b5bd-cf65452507a9
+      OwnerLastKnownName: DuLin0816
+    CreatedOn: 1711115472182
+    Areas:
+      main: 78:28:-22:122:73:22
+  hhh:
+    TPLoc: 68.5:49.0:-358.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        5d30a4c8-5230-3b28-bfd3-82820e05dea7: 1
+      AreaFlags: 3
+      OwnerUUID: 5d30a4c8-5230-3b28-bfd3-82820e05dea7
+      OwnerLastKnownName: Sirin_Kaslanna
+    CreatedOn: 1712402935986
+    Areas:
+      main: 52:8:-377:84:56:-342
+  myr:
+    TPLoc: 446.51:5.5:-8.2:44.7:178.66
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        9a7086ab-e716-34af-8ce8-ee68b23cea67: 1
+      AreaFlags: 4
+      OwnerUUID: 9a7086ab-e716-34af-8ce8-ee68b23cea67
+      OwnerLastKnownName: LH_longhun
+    CreatedOn: 1712830401596
+    Areas:
+      main: 426:0:-34:466:55:6
+  xht:
+    TPLoc: 69.5:12.0:-668.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        82c507d8-285d-395e-b596-e7eacf93a954: 1
+      AreaFlags: 5
+      OwnerUUID: 82c507d8-285d-395e-b596-e7eacf93a954
+      OwnerLastKnownName: ORhH_year
+    CreatedOn: 1716910163837
+    Areas:
+      main: 44:0:-694:94:60:-644

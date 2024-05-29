@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:06:39 CST 2024
+commons-codec-1.11.pom>https\://maven.aliyun.com/repository/public/=
+commons-codec-1.11.pom>https\://repo1.maven.org/maven2/=
+commons-codec-1.11.pom>repo42=
+commons-codec-1.11.pom>repo62=

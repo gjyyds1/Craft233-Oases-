@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:07:08 CST 2024
+httpasyncclient-4.1.5.jar>https\://maven.aliyun.com/repository/public/=
+httpasyncclient-4.1.5.jar>https\://repo1.maven.org/maven2/=
+httpasyncclient-4.1.5.jar>repo42=
+httpasyncclient-4.1.5.jar>repo62=
+httpasyncclient-4.1.5.pom>https\://maven.aliyun.com/repository/public/=
+httpasyncclient-4.1.5.pom>https\://repo1.maven.org/maven2/=
+httpasyncclient-4.1.5.pom>repo42=
+httpasyncclient-4.1.5.pom>repo62=

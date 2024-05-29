@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:04:01 CST 2024
+easysql-api-0.4.7.jar>https\://maven.aliyun.com/repository/public/=
+easysql-api-0.4.7.jar>https\://repo1.maven.org/maven2/=
+easysql-api-0.4.7.jar>repo32=
+easysql-api-0.4.7.pom>https\://maven.aliyun.com/repository/public/=
+easysql-api-0.4.7.pom>https\://repo1.maven.org/maven2/=
+easysql-api-0.4.7.pom>repo32=

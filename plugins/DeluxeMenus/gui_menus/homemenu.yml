@@ -1,0 +1,33 @@
+menu_title: '&e&l家&公共地点'
+open_command: homemenu
+size: 27
+items:
+  '11':
+    material: WHITE_BED
+    slot: 11
+    display_name: '&e自己的家'
+    lore:
+      - '&f显示自己已创建的家'
+    left_click_commands:
+      - '[player] home'
+    right_click_commands:
+      - '[player] home'
+  '15':
+    material: LECTERN
+    slot: 15
+    display_name: '&e公共地点'
+    lore:
+      - '&f查看玩家已设置的公共地点'
+      - '&f非/res'
+    left_click_commands:
+      - '[player] publichome'
+    right_click_commands:
+      - '[player] publichome'
+  '18':
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 18
+    display_name: '&e返回上一页'
+    left_click_commands:
+      - '[player] cd'
+    right_click_commands:
+      - '[player] cd'

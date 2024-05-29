@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Feb 01 10:49:37 CST 2024
+slf4j-bom-2.0.10.pom>https\://repo1.maven.org/maven2/=
+slf4j-bom-2.0.10.pom>https\://maven.aliyun.com/repository/public/=

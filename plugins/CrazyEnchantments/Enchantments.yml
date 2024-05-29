@@ -1,0 +1,2240 @@
+# 物品种类:
+# - Armor盔甲 ~ 所有的盔甲
+# - Helmet头盔
+# - Boots鞋子
+# - Bow弓
+# - Axe斧头
+# - Sword剑
+# - PickAxe镐
+# - Hoe锄
+# - Tool工具 ~ Pickaxes, Axes, Shovels, Hoes, and Shears
+# - All ~ All items listed here
+##########
+# 机会系统
+#
+# 机会系统：
+# 基础： # 起始几率。
+# 增加： # 每升一级的量。
+##########
+Enchantments:
+  #请勿更改此行。
+  Glowing: #请勿更改这些行。如果是这样，您将在控制台中收到错误。
+    #结界是否处于活动状态
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    #游戏中附魔的名称
+    Name: '&7光之赐'
+    #附魔可获得的最高等级
+    MaxPower: 1
+    #可附魔的物品种类
+    Enchantment-Type: 'Helmet'
+    #附魔的信息
+    Info:
+      #菜单中显示的物品名称
+      Name: '&7光之赐 &7(&bI&7)'
+      #The description of what it does.
+      Description:
+        - '&7获得夜视'
+        - ''
+        - '&6可获得等级:'
+#        - '&7 - &a&l&n普通'
+#        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备: &a头盔'
+    #可获得的附魔等级All the categories the Enchantment can be
+    Categories:
+#      - 'Common'
+#      - 'Rare'
+      - 'Legendary'
+  #不要更改这一行
+  BurnShield:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7烈火之御'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l烈火之御 &7(&bI&7)'
+      Description:
+        - '&7此等附魔无需言'
+        - '&7烈火焚烧若等闲'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Piercing:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7致命一击'
+    MaxPower: 3
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l致命一击 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率对你的敌人造成双倍伤害'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  OverLoad:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7生命之源'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l生命之源 &7(&bI-&bV&7)'
+      Description:
+        - '&7当你穿上装备时获得生命提升'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+        - '&6Enchantable Items: &aArmor'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  SelfDestruct:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7自爆'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l自爆&7(&bI-&bV&7)'
+      Description:
+        - '&7当你死时产生爆炸'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  Springs:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7灵跃之靴'
+    MaxPower: 5
+    Enchantment-Type: 'Boots'
+    Info:
+      Name: '&e&l灵跃之靴 &7(&bI-&bV&7)'
+      Description:
+        - '&7当你穿上时获得跳跃提升.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a鞋子'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Gears:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7赫尔墨斯之靴'
+    MaxPower: 3
+    Enchantment-Type: 'Boots'
+    Info:
+      Name: '&e&l赫尔墨斯之靴 &7(&bI-&bIII&7)'
+      Description:
+        - '&7给予你速度'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a鞋子'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Hulk:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7重甲'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l重甲 &7(&bI-&bII&7)'
+      Description:
+        - '&7给予你力量、减伤'
+        - '&7和减速.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Mermaid:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7人鱼'
+    MaxPower: 3
+    Enchantment-Type: 'Helmet'
+    Info:
+      Name: '&e&l人鱼 &7(&bI-&bIII&7)'
+      Description:
+        - '&7给予你 水下呼吸'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a头盔'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Ninja:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7忍者'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l忍者 &7(&bI-&bII&7)'
+      Description:
+        - '&7当你穿上时获得速度,生命提升'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Vampire:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7饮血'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l饮血 &7(&bI-&bV&7)'
+      Description:
+        - '&7在你战斗时'
+        - '&7有几率吸敌之血.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  LifeSteal:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7生命偷取'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l生命偷取 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率偷取'
+        - '&7你的敌人的生命.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Doctor:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7爱心之箭'
+    MaxPower: 3
+    Enchantment-Type: 'Bow'
+    Info:
+      Name: '&e&l爱心之箭 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率'
+        - '&7治疗你打中的玩家'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Boom:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7轰鸣箭'
+    MaxPower: 3
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 20
+      Increase: 10
+    Info:
+      Name: '&e&l轰鸣箭 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率在弓箭落地时'
+        - '&7生成TNT.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Venom:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7剧毒之伤'
+    MaxPower: 5
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l剧毒之伤 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人中毒.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  DoubleDamage:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7利刃'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 1
+    Info:
+      Name: '&e&l利刃 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率'
+        - '&7造成双倍伤害.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  SlowMo:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7S迟钝'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l迟钝 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人减速.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Blindness:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7致盲'
+    MaxPower: 2
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 1
+    Info:
+      Name: '&e&l致盲 &7(&bI-&bII&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人失明.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Viper:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7剧毒之刃'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l剧毒之刃 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人中毒.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  AntiGravity:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7反重力'
+    MaxPower: 3
+    Enchantment-Type: 'Boots'
+    Info:
+      Name: '&e&l反重力 &7(&bI-&bIII&7)'
+      Description:
+        - '&7当你穿上时.'
+        - '&7获得高级的跳跃提升'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a鞋子'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  FastTurn:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7顺劈'
+    MaxPower: 2
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l顺劈 &7(&bI-&bII&7)'
+      Description:
+        - '&7有几率'
+        - '&7造成额外伤害.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  LightWeight:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7轻质'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l轻质 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使你在战斗时获得急迫.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Blessed:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7祝福之握'
+    MaxPower: 3
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l祝福之握 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率'
+        - '&7移除负面buff.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  FeedMe:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7饱和'
+    MaxPower: 5
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l饱和 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率'
+        - '&7横扫饥饿.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Dizzy:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7眩晕'
+    MaxPower: 3
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l眩晕 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人眩晕.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Berserk:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7狂暴之斧'
+    MaxPower: 3
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 1
+    Info:
+      Name: '&e&l狂暴之斧 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使你'
+        - '&7获得力量和挖掘疲劳.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Cursed:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7诅咒之斧'
+    MaxPower: 3
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l诅咒之斧 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使你的敌人获得挖掘疲劳的效果.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Rekt:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7重击'
+    MaxPower: 3
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 5
+      Increase: 1
+    Info:
+      Name: '&e&l重击 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率'
+        - '&7造成双倍伤害.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Enlightened:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7治愈'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l治愈 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率'
+        - '&7在你受伤时治愈你.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Freeze:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7冰洁'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l冰洁 &7(&bI-&bII&7)'
+      Description:
+        - '&7有几率使你的敌人减速'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Fortify:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7弱化'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l弱化 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率使你的敌人虚弱'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Molten:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7融化'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 1
+    Info:
+      Name: '&e&l融化 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人着火.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  PainGiver:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7赐毒'
+    MaxPower: 4
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l赐毒 &7(&bI-&bIV&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人中毒.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Savior:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7拯救者'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l拯救者 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率'
+        - '&7将你所受伤害减半.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Nursery:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7再生'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l再生 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率'
+        - '&7在你移动时获得治疗.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  AutoSmelt:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7精炼'
+    MaxPower: 5
+    Enchantment-Type: 'PickAxe'
+    Chance-System:
+      Base: 25
+      Increase: 25
+    Info:
+      Name: '&e&l精炼 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率自动熔炼'
+        - '&7矿物并获得更多锭.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a镐'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Experience:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7经验'
+    MaxPower: 3
+    Enchantment-Type: 'PickAxe'
+    Chance-System:
+      Base: 25
+      Increase: 25
+    Info:
+      Name: '&e&l经验 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率从矿物中获取多倍经验.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a镐'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Telepathy:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7方块感应'
+    MaxPower: 1
+    Enchantment-Type: 'Tool'
+    Info:
+      Name: '&e&l方块感应 &7(&bI&7)'
+      Description:
+        - '&7自动将你破坏的方块放到你的背包内'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a工具'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Haste:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7急迫'
+    MaxPower: 3
+    Enchantment-Type: 'Tool'
+    Info:
+      Name: '&e&l急迫 &7(&bI-&bIII&7)'
+      Description:
+        - '&7给予你急迫当你'
+        - '&7手握此装备.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a工具'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Oxygenate:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7制氧'
+    MaxPower: 1
+    Enchantment-Type: 'Tool'
+    Info:
+      Name: '&e&l制氧 &7(&bI&7)'
+      Description:
+        - '&7当你手握此物品.'      
+        - '&7给予你水下呼吸'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a工具'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  IceFreeze:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7寒冰箭'
+    MaxPower: 1
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 25
+      Increase: 10
+    Info:
+      Name: '&e&l寒冰箭 &7(&bI&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人减速.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Lightning:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7隐雷之箭'
+    MaxPower: 1
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 25
+      Increase: 10
+    Info:
+      Name: '&e&l隐雷之箭 &7(&bI&7)'
+      Description:
+        - '&7有几率触发'
+        - '&7闪电在弓箭落下的地方.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Decapitation:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7斩首'
+    MaxPower: 5
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 10
+    Info:
+      Name: '&e&l斩首 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率砍下'
+        - '&7玩家的头.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a斧头'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  Confusion:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7混乱之刃'
+    MaxPower: 4
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l混乱之刃 &7(&bI-&bIV&7)'
+      Description:
+        - '&7有几率使'
+        - '&7你的敌人获得反胃效果.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Disarmer:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7卸甲之刃'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 1
+    Info:
+      Name: '&e&l卸甲之刃 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率卸下你的敌人的装甲.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Execute:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7处决'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Info:
+      Name: '&e&l处决 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率在你的敌人残血时获得力量'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Headless:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7铡头者'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 10
+    Info:
+      Name: '&e&l铡头者 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率砍下'
+        - '&7你的敌人的头.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Inquisitive:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7智慧'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 50
+      Increase: 25
+    Info:
+      Name: '&e&l智慧 &7(&bI-&bV&7)'
+      Description:
+        - '&7几率多倍经验'
+        - '&7效果由附魔等级决定.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Insomnia:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7失眠'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l失眠 &7(&bI&7)'
+      Description:
+        - '&7获得反胃、挖掘疲劳、和减速效果'
+        - '&7但有很大几率产生双倍伤害.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Nutrition:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7补给'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l补给 &7(&bI-&bIII&7)'
+      Description:
+        - '&7战斗时有几率横扫饥饿.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Obliterate:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7退却'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l退却 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率击退敌人'
+        - '&7你的敌人.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Paralyze:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7麻痹'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l麻痹e &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率给你的敌人'
+        - '&7挖掘疲劳和减速效果.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  SkillSwipe:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7经验偷取'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l经验偷取 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率偷取你的敌人的xp'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Snare:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7罗网'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 3
+    Info:
+      Name: '&e&l罗网 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率给予你的'
+        - '&7敌人减速和挖掘疲劳.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Trap:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7陷阱'
+    MaxPower: 2
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l陷阱 &7(&bI-&bII&7)'
+      Description:
+        - '&7有几率给予'
+        - '&7你的敌人减速.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Wither:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7凋零'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 3
+    Info:
+      Name: '&e&l凋零 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率给予'
+        - '&7你的敌人 凋零.'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Rage:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7怒气'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Info:
+      Name: '&e&l怒气 &7(&bI-&bIII&7)'
+      Description:
+        - '&7愈战愈勇.'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Valor:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7英勇'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l英勇 &7(&bI-&bII&7)'
+      Description:
+        - '&7获得伤害减免'
+        - '&7效果取决于附魔等级.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  SmokeBomb:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7烟雾弹'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l烟雾弹 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率致盲和'
+        - '&7减速你的敌人来让你逃跑.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  Drunk:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7醉酒'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l醉酒 &7(&bI-&bIII&7)'
+      Description:
+        - '&7获得力量、挖掘疲劳'
+        - '&7和减速效果.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Voodoo:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7巫毒'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l巫毒 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率 给予'
+        - '&7你的敌人虚弱.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  MultiArrow:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7连弩'
+    MaxPower: 5
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 25
+      Increase: 10
+    Info:
+      Name: '&e&l连弩 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率一次射出'
+        - '&7多根箭.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+        - '&6Enchantable Items: &aBows'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Recover:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7嗜血'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l嗜血 &7(&bI&7)'
+      Description:
+        - '&7当你杀死一个玩家时'
+        - '&7你会获得生命恢复和提升.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  Cactus:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7荆棘之护'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 25
+      Increase: 25
+    Info:
+      Name: '&e&l荆棘之护 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率刺伤'
+        - '&7攻击你的玩家.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  Rocket:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7火箭靴'
+    MaxPower: 3
+    Enchantment-Type: 'Boots'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l火箭靴 &7(&bI-&bIII&7)'
+      Description:
+        - '&7当你残血时'
+        - '&7你会离开地面并后冲。'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a鞋子'
+    Categories:
+      - 'Common'
+      - 'Rare'
+  #Do not change this line.
+  # waiting for use
+  Adrenaline:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7绝地跑靴'
+    MaxPower: 3
+    Enchantment-Type: 'Boots'
+    Chance-System:
+      Base: 15
+      Increase: 5
+    Info:
+      Name: '&e&l绝地跑靴 &7(&bI-&bIII&7)'
+      Description:
+        - '&7如果健康状况不佳'
+        - '&7你就有机会获得速度提升'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备: &a鞋子'
+    Categories:
+      - 'Legendary'
+      #      - 'Mythical'
+  #Do not change this line.
+  Angel:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7天使'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l天使 &7(&bI-&bV&7)'
+      Description:
+        - '&7当你穿戴此物品时.'      
+        - '&7治疗附近的玩家'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  HellForged:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7地狱熔炉'
+    MaxPower: 4
+    Enchantment-Type: 'Damaged-Items'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l地狱熔炉 &7(&bI-&bIV&7)'
+      Description:
+        - '&7有几率在你移动时修复装备.'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲、武器、工具、钓鱼竿和剪刀'
+        # 使用原版提示意思，旧配置:&a盔甲、武器、工具
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Commander:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7指挥官'
+    MaxPower: 5
+    Enchantment-Type: 'Helmet'
+    Info:
+      Name: '&e&l指挥官 &7(&bI-&bV&7)'
+      Description:
+        - '&7当你穿上装备时，'      
+        - '&7给予附近的玩家急迫效果'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a头盔'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  StormCaller:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7风暴召唤者'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l风暴召唤者 &7(&bI-&bV&7)'
+      Description:
+        - '&7有几率触发落雷来打击你的敌人'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Leadership:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7领导者'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l领导者 &7(&bI-&bV&7)'
+      Description:
+        - '&7有队友在你附近时.'      
+        - '&7你会变得更强'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Implants:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7饱食'
+    MaxPower: 5
+    Enchantment-Type: 'Helmet'
+    Chance-System:
+      Base: 5
+      Increase: 5
+    Info:
+      Name: '&e&l饱食 &7(&bI-&bV&7)'
+      Description:
+        - '&7恢复饥饿'
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a头盔'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Wings:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7羽翼'
+    MaxPower: 1
+    Enchantment-Type: 'Boots'
+    Info:
+      Name: '&e&l羽翼 &7(&bI&7)'
+      Description:
+        - '&7允许你在'
+        - '&7自己的领土上飞行.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a鞋子'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  VeinMiner:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7连锁采集'
+    MaxPower: 6
+    Enchantment-Type: 'PickAxe'
+    Info:
+      Name: '&e&l连锁采集 &7(&bI-VI&7)'
+      Description:
+        - '&7破坏相连的矿物'
+        - '&7等级越高越多'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+#        - '&7 - &4&l&n传说'
+        - '&6Enchantable Items: &a镐'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Blast:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7毁灭之镐'
+    MaxPower: 3
+    Enchantment-Type: 'PickAxe'
+    Info:
+      Name: '&e&l毁灭之镐 &7(&bI-&bIII&7)'
+      Description:
+        - '&7破坏3X3XN的方块'
+        - '&7效果取决于附魔等级.'
+        - '&7耐久消耗取决于破坏方块数.'        
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a镐'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Furnace:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7熔炉之镐'
+    MaxPower: 1
+    Enchantment-Type: 'PickAxe'
+    Info:
+      Name: '&e&l熔炉之镐 &7(&bI&7)'
+      Description:
+        - '&7直接冶炼矿物为物品'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a镐'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Blizzard:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7暴雪'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l暴雪 &7(&bI&7)'
+      Description:
+        - '&7给予你3格'
+        - '&7范围内玩家一小段时间的减速.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  AcidRain:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7酸雨'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l酸雨 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率在你攻击时给予你3格'
+        - '&7范围内玩家一小段时间的SO2中毒.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  SandStorm:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7沙暴'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l沙暴 &7(&bI&7)'
+      Description:
+        - '&7有几率给予你3格'
+        - '&7范围内玩家一小段时间的失明.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Radiant:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7辐射'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l辐射 &7(&bI-&bIII&7)'
+      Description:
+        - '&7使你3格范围内的玩家着火'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Intimidate:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7恐吓'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l恐吓 &7(&bI-&bII&7)'
+      Description:
+        - '&7有几率使你3格'
+        - '&7范围内敌人虚弱.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Pull:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7万象天引'
+    MaxPower: 3
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 25
+      Increase: 10
+    Info:
+      Name: '&e&l万象天引 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率击飞你的敌人'
+        - '&7到你附近.'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Tamer:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7驯兽师'
+    MaxPower: 5
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l驯兽师 &7(&bI-&bV&7)'
+      Description:
+        - '&7当你遇到麻烦时'
+        - '&7召唤狼群.'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Guards:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7守护者'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l守护者 &7(&bI-&bIII&7)'
+      Description:
+        - '&7召唤铁傀儡'
+        - '&7当你遇到麻烦.'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Infestation:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7害虫横行'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l害虫横行 &7(&bI-&bII&7)'
+      Description:
+        - '&7当你遇到麻烦时几率召唤出虫族.'
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Necromancer:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7死灵法师'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l死灵法师 &7(&bI-&bIII&7)'
+      Description:
+        - '&7当你遇到麻烦的时候几率召唤僵尸'
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  BeeKeeper:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7养蜂人'
+    MaxPower: 2
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l养蜂人r &7(&bI-&bII&7)'
+      Description:
+        - '&7当你遇到麻烦时'
+        - '&7召唤蜜蜂'
+        - ''
+        - '可获得等级:'
+        - '&7 - &a&l&n普通'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Common'
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Maneuver:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7闪避'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l闪避 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有机会躲避攻击。'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a盔甲'
+    Categories:
+      - 'Legendary'
+#      - 'Mythical'
+  #Do not change this line.
+  Crouch:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7蹲伏'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l蹲伏 &7(&bI-III&7)'
+      Description:
+        - '&7在战斗中，蹲下时你受到的伤害减少'
+        - '&610%（每级+5%）'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6Enchantable Items: &a盔甲'
+    Categories:
+      - 'Legendary'
+      #      - 'Mythical'
+  #Do not change this line.
+  Shockwave:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7反弹'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l反弹 &7(&bI-&bIII&7)'
+      Description:
+        - '&7当敌人攻击你时.'
+        - '&7有机会弹开他们'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6Enchantable Items: &aA盔甲'
+    Categories:
+      - 'Legendary'
+      #      - 'Mythical'
+  #Do not change this line.
+  # clsoe
+  SystemReboot:
+    Enabled: false
+    Name: '&7SystemReboot'
+    MaxPower: 3
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&lSystemReboot &7(&bI-&bIII&7)'
+      Description:
+        - '&7Chance to become'
+        - '&7full hp when'
+        - '&7attacked at low hp.'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6Enchantable Items: &aArmor'
+    Categories:
+      - 'Legendary'
+      #      - 'Mythical'
+  #Do not change this line.
+  Sticky-Shot:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7困兽之箭'
+    MaxPower: 3
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 10
+      Increase: 10
+    Info:
+      Name: '&e&l困兽之箭 &7(&bI-&bIII&7)'
+      Description:
+        - '&7有几率在弓箭落地时'
+        - '&7召唤出蜘蛛网.'
+        - ''
+        - '可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a弓'
+    Categories:
+      - 'Rare'
+      - 'Legendary'
+  #Do not change this line.
+  Disorder:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7扰乱'
+    MaxPower: 1
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 1
+      Increase: 1
+    Info:
+      Name: '&e&l扰乱 &7(&bI&7)'
+      Description:
+        - '&7有几率'
+        - '&7弄乱你击中的玩家的物品栏.'
+        - ''
+        - '可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Charge:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7充能'
+    MaxPower: 5
+    Enchantment-Type: 'Sword'
+    Info:
+      Name: '&e&l充能 &7(&bI-V&7)'
+      Description:
+        - '&7当你杀死敌对玩家时，'
+        - '&7你和附近的队友会获得加速效果.'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+  #Do not change this line.
+  Revenge:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7复仇之剑'
+    MaxPower: 1
+    Enchantment-Type: 'Sword'
+    Info:
+      Name: '&e&l复仇之剑 &7(&bI&7)'
+      Description:
+        - '&7当你附近的队友被杀死时，'
+        - '&7你可以获得速度、生命恢复,'
+        - '&7和急迫的效果'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+  #Do not change this line.
+  BattleCry:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7战吼'
+    MaxPower: 5
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l战吼 &7(&bI-V&7)'
+      Description:
+        - '&7在战斗时'
+        - '&6有10%(每级附魔+5%) &7的几率'
+        - '&7吼飞附近的玩家.'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备:  &a斧'
+    Categories:
+      - 'Legendary'
+  DemonForged:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7附加伤害'
+    MaxPower: 5
+    Enchantment-Type: 'Axe'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l附加伤害 &7(&bI-V&7)'
+      Description:
+        - '&7在战斗中它有 &610%（每级+5%）'
+        - '&7有机会造成更多的耐久伤害'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6Enchantable Items: &a斧'
+    Categories:
+      - 'Legendary'
+      #      - 'Mythical'
+  #Do not change this line.
+  Famished:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7破釜'
+    MaxPower: 3
+    Enchantment-Type: 'Sword'
+    Chance-System:
+      Base: 10
+      Increase: 5
+    Info:
+      Name: '&e&l破釜 &7(&bI-III&7)'
+      Description:
+        - '&7在战斗时'
+        - '&6有10%(每级附魔+5%)&7的几率'
+        - '&7使敌人饥饿.'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备:  &a剑'
+    Categories:
+      - 'Rare'
+  #Do not change this line.
+  GreenThumb:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7园艺'
+    MaxPower: 3
+    Enchantment-Type: 'Hoe'
+    Chance-System:
+      Base: 10
+      Increase: 10
+    Info:
+      Name: '&e&l园艺 &7(&bI-III&7)'
+      Description:
+        - '&7右击幼苗时'
+        - '&7有&610%(每级+10%)&7的几率'
+        - '&7使植物直接成熟'
+        - '&7但会消耗锄头耐久.'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &9&l&n稀有'
+        - '&6可附魔装备: &a锄'
+    Categories:
+      - 'Rare'
+  #Do not change this line.
+  Harvester:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7收割者'
+    MaxPower: 1
+    Enchantment-Type: 'Hoe'
+    Info:
+      Name: '&e&l收割者 &7(&bI&7)'
+      Description:
+        - '&7在你破坏成熟的作物时'
+        - '&7也会破坏附近3X3的成熟作物'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &a&l&n普通'
+        - '&6可附魔装备: &a锄'
+    Categories:
+      - 'Common'
+  #Do not change this line.
+  Tiller:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7耕耘'
+    MaxPower: 1
+    Enchantment-Type: 'Hoe'
+    Info:
+      Name: '&e&l耕耘 &7(&bI&7)'
+      Description:
+        - '&7在你耕地时'
+        - '&7会自动耕3X3范围内的地'
+        - '&7同时滋润附近没有水源的土壤'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &a&l&n普通'
+        - '&6可附魔装备: &a锄'
+    Categories:
+      - 'Common'
+  #Do not change this line.
+  Planter:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7耕耘者'
+    MaxPower: 1
+    Enchantment-Type: 'Hoe'
+    Info:
+      Name: '&e&l耕耘者&7(&bI&7)'
+      Description:
+        - '&7在你耕地时'
+        - '&7自动放置你副手的种子'
+        - '&7或是你快捷栏内的种子'
+        - ''
+        - '&6可获得等级'
+        - '&7 - &a&l&n普通'
+        - '&6可附魔装备: &a锄'
+    Categories:
+      - 'Common'
+  #Do not change this line.
+  Cyborg:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7机械化'
+    MaxPower: 1
+    Enchantment-Type: 'Armor'
+    Info:
+      Name: '&e&l机械化 &7(&bI&7)'
+      Description:
+        - '&7获得速度、力量'
+        - '&7和跳跃提升效果'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备: &a盔甲'
+    Categories:
+      - 'Legendary'
+  #Do not change this line.
+  Sniper:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP"
+    Name: '&7狙击手'
+    MaxPower: 2
+    Enchantment-Type: 'Bow'
+    Chance-System:
+      Base: 25
+      Increase: 5
+    Info:
+      Name: '&e&l狙击手 &7(&bI-&bII&7)'
+      Description:
+        - '&7击中目标'
+        - '&7会对其造成'
+        - '&7高额中毒伤害'
+        - ''
+        - '&6可获得等级:'
+        - '&7 - &4&l&n传说'
+        - '&6可附魔装备: &a弓'
+    Categories:
+      - 'Legendary'

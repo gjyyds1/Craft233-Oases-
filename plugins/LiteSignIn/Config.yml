@@ -1,0 +1,274 @@
+#Command prefix
+Prefix: '&3SignIn &f&l>>> '
+
+#Plugin language
+#Provide English, Simplified-Chinese, Traditional-Chinese and Japanese by default
+Language: Simplified-Chinese
+
+#This function is used to record the order in which players sign in daily.
+Enable-Sign-In-Ranking: true
+
+#PlaceholderAPI Settings
+PlaceholderAPI:
+    #Whether to use the PlaceholderAPI
+    Enabled: true
+    #Latency (seconds) for placeholder cache updates
+    #Since some placeholders need to continuously read the data of the database,
+    #this option is used to prevent the huge burden on database IO caused by frequent calls to PAPI placeholders.
+    Cache-Update-Delay: 10
+    #Placeholder for exception (not cached)
+    #Example: 'queue' which is %litesignin_queue% 
+    Exceptions: []
+
+#Conditions for today's online duration (players can only sign in when they are online for a certain period of time)
+#Note: Today's online duration statistics will be reset due to server restart or plugin uninstallation
+Online-Duration-Condition:
+    Enabled: false
+    #Time requirement
+    #Format: Hour:Minute:Second
+    #Minimum: 00:00:00 , Maximum: 23:59:59
+    Time: 00:03:00
+    #Enable statistics (after enabling, even if the player disconnects midway, today's online duration will be retained)
+    Statistics: true
+
+#Multi-group reward mode
+#When players have multiple reward groups' permission at the same time, they will receive their rewards at the same time when sign-in.
+#For example, a player who has both Group1 and Group2 group permissions will receive rewards from both groups after signing in.
+Enable-Multi-Group-Reward: false
+
+#Whether to remind players to remember to check in when they join server.
+Join-Event:
+    Enabled: true
+    #Whether to enable auto sign-in (Need have permission)
+    Auto-SignIn: false
+    #Delay (Unit: second)
+    Delay: 0
+
+#About GUI settings
+GUI-Settings:
+    #Whether use chest GUI to display sign-in menu.
+    #If true, you can use command /signin gui to open sign-in menu.
+    Enabled: true
+    #The lower limit date
+    #PS: 2019/11/15 is the day the first version of this plugin is completed.
+    Limit-Date:
+        #Whether to enable
+        Enabled: false
+        #Minimum year
+        Minimum-Year: 2019
+        #Minimum month
+        Minimum-Month: 11
+
+#Whether to check update
+#Only running at server starting. 
+#It will check the latest version of the plugin, and report to the console and authorized players.
+#This function will not cause the server to generate too much traffic. (Less than 1kb)
+Updater: true
+
+Auto-Save: 
+    Enabled: false
+    Only-MySQL: true
+    #Minute
+    Delay: 10
+    
+#Whether enable Metrics
+#Detailed: https://bstats.org/plugin/bukkit/LiteSignIn/11849
+Metrics: true
+    
+#Wood signs script
+#After enabling, WoodSignSettings.yml file will be generated, please edit in the file according to the help of comments.
+Wood-Signs-Script: false
+
+#Async thread settings
+#If you don't know what an asynchronous thread is, please don't modify this option!
+Async-Thread-Settings: 
+    #Task thread delay, which mainly handles new tasks submitted
+    Task-Thread-Delay: 0.1
+    #Async task settings
+    #You can choose to set certain tasks as asynchronous tasks.
+    Async-Task-Settings:
+        #Leaderboard view (command /litesignin leaderboard)
+        Leaderboard-View: false
+        #Load player's data
+        Load-Data: true
+        #Open GUI (this option is enabled by default because loading heads may cause lag)
+        Open-GUI: true
+    
+#Retroactive Card
+#Its role is to supplement the missing sign-in date.
+Retroactive-Card:
+    Enabled: true
+    #Intervals for SignIn.
+    Intervals: 5
+    #Quantity required
+    Quantity-Required: 1
+    #The lower limit date, players can not re-sign the date before this.
+    #PS: 2019/11/15 is the day the first version of this plugin is completed.
+    Minimum-Date: '2019-11-15'
+    #Required item.
+    Required-Item:
+        #If false, the retroactive card will not be an item, but a virtual prop.
+        #You can use: /signin info [player] to check the number of cards a player has.
+        Enabled: false
+        #Custom item name
+        #You can edit it in CustomItems.yml.
+        CustomItem: 'RetroactiveCard'
+
+#MySQL Database settings
+MySQL-Storage:
+    Enabled: true
+    Hostname: localhost
+    Port: 3306
+    Username: 'litesignin'
+    Password: 'DQDBxynpn8tDc6Ke'
+    #Database's name
+    Database: 'litesignin'
+    #Player data refresh interval (seconds). -1 is none, only refresh the data when entering the server (it is recommended to do this when using MySQL on a single server)
+    Refresh-Interval: 5
+    Wait-Timeout: 18000
+    Table-Name: playerdata
+    #In this mode, the target database will be automatically located/created after connecting to MySQL.
+    #Suitable for people who only know how to deploy but cannot operate MySQL to use.
+    #PS: If the server cannot locate the target database, you need to set off this option to manually create the database!
+    Automatic-Deploy-Mode: true
+    #More connection parameters. If you are not a developer and are not familiar with JDBC, please do not modify it.
+    Options:
+        useSSL: false
+        useUnicode: true
+        allowMultiQueries: true
+        allowPublicKeyRetrieval: true
+        characterEncoding: 'utf8'
+        autoReconnect: true
+    
+#SQLite Database settings
+#Storage priority: Yaml < SQLite < MySQL
+SQLite-Storage:
+    #The default is enabled, if false, it will be converted to Yaml storage.
+    Enabled: false
+    #Database file name.
+    Database-File: 'Database.db'
+    #File path.
+    Database-Path: 'plugins/LiteSignIn/'
+    #Player data refresh interval (seconds). -1 is none, only refresh the data when entering the server
+    Refresh-Interval: 5
+    Table-Name: playerdata
+    
+Database-Management:
+    Backup:
+        Enabled: true
+        #Turn on automatic backup (performed every time the server is turned off)
+        Auto-Backup: false
+        #Backup's folder path
+        Backup-Folder-Path: 'plugins/LiteSignIn/Backup/'
+        #Backup file name
+        Backup-File: 'Backup-{time}.db'
+        Time-Format: 'yyyy-MM-dd-HH-mm-ss'
+    Rollback:
+        Enabled: true
+        #Backup's folder path (the backup file will be selected from here for rollback)
+        Backup-Folder-Path: 'plugins/LiteSignIn/Backup/'
+        #Whether to perform a backup before performing a rollback
+        Rollback-With-Backup: true
+    
+#Order of sign-in reward tasks (giving items, executing commands, sending messages)
+#The default order is: Items reward -> commands execution -> messages sending -> broadcast messages sending -> play sounds
+Reward-Task-Sequence:
+- ITEMS_REWARD
+- COMMANDS_EXECUTION
+- MESSAGES_SENDING
+- BROADCAST_MESSAGES_SENDING
+- PLAYSOUNDS
+    
+#Permission settings
+#If the option "Default" is true, Everyone will have permission to use command.
+Permissions:
+    #About retroactive card permissions
+    Retroactive-Card:
+        #Use retroactive card.
+        Use:
+            Permission: signin.retroactive-card.use
+            Default: true
+        #Hold a retroactive card.
+        #If there is no permission, it will be automatically confiscated by the system.
+        Hold:
+            Permission: signin.retroactive-card.hold
+            Default: true
+    #About updater's permission
+    Updater: 
+        Permission: signin.updater
+        Default: false
+    #Auto sign-in permission
+    Join-Auto-SignIn:
+        Default: false
+        Permission: signin.joinevent.autosignin
+    #About commands permissions
+    Commands:
+        Help: 
+            Permission: signin.command.help=
+            Default: true
+        Reload: 
+            Permission: signin.command.reload
+            Default: false
+        GUI: 
+            Permission: signin.command.gui
+            Default: true
+        Designated-GUI: 
+            Permission: signin.command.designatedgui
+            Default: false
+        Click: 
+            Permission: signin.command.click
+            Default: true
+        Click-Others: 
+            Permission: signin.command.clickothers
+            Default: false
+        RetroactiveCard:
+            Permission: signin.command.retroactivecard
+            Default: false
+            Give:
+                Permission: signin.command.retroactivecard.give
+                Default: false
+            Set:
+                Permission: signin.command.retroactivecard.set
+                Default: false
+            Take:
+                Permission: signin.command.retroactivecard.take
+                Default: false
+        Info: 
+            Permission: signin.command.info
+            Default: false
+        ItemCollection: 
+            Permission: signin.command.itemcollection
+            Default: false
+            List:
+                Permission: signin.command.itemcollection.list
+                Default: false
+            Add:
+                Permission: signin.command.itemcollection.add
+                Default: false
+            Delete:
+                Permission: signin.command.itemcollection.delete
+                Default: false
+            Give:
+                Permission: signin.command.itemcollection.give
+                Default: false
+        Save: 
+            Permission: signin.command.save
+            Default: false
+        Database:
+            Permission: signin.command.database
+            Default: false
+            Backup:
+                Permission: signin.command.database.backup
+                Default: false
+            Rollback:
+                Permission: signin.command.database.rollback
+                Default: false
+        LeaderBoard:
+            Permission: signin.command.leaderboard
+            Default: true
+            Designated-Date:
+                Permission: signin.command.leaderboard.designateddate
+                Default: false
+        Reward:
+            Permission: signin.command.reward
+            Default: false

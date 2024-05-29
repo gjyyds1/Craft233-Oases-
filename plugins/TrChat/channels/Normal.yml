@@ -1,0 +1,47 @@
+Options:
+  Target: ALL
+  Auto-Join: true
+
+Formats:
+  - condition: ~
+    priority: 100
+    msg:
+      default-color: '&f'
+      hover: '&7发送时间: %server_time_h:mm:ss a%'
+    prefix:
+      world:
+        text: '&7&l[%multiverse_world_alias%&7&l]&f'
+        hover: |-
+          &r
+          &8▪ &7位置: %multiverse_world_alias%&7, &2%player_x%/%player_y%/%player_z%
+          &r
+          &6▶ &e点击发送传送请求
+          &r
+        command: '/tpa %player_name%'
+      part-before-player:
+        text: ' '
+      player:
+        - condition: 'player op'
+          text: '&6%player_name%'
+          hover: |-
+            &r
+            &8▪ &7Ping: &3%player_ping% Ms
+            &8▪ &7生命值: &c%player_health_rounded% ❤
+            &r
+            &6▶ &e点击私聊
+            &r
+          suggest: '/msg %player_name% '
+        - text: '&f%player_name%'
+          hover: |-
+            &r
+            &8▪ &7Ping: &3%player_ping% Ms
+            &8▪ &7生命值: &c%player_health_rounded% ❤
+            &r
+            &6▶ &e点击私聊
+            &r
+          suggest: '/msg %player_name% '
+      part-before-msg:
+        text: ' &f&l>> '
+    suffix:
+      example:
+        text: ''

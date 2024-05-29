@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:05:45 CST 2024
+pull-parser-2.1.10.jar>https\://maven.aliyun.com/repository/public/=
+pull-parser-2.1.10.jar>https\://repo1.maven.org/maven2/=
+pull-parser-2.1.10.jar>repo52=
+pull-parser-2.1.10.pom>https\://maven.aliyun.com/repository/public/=
+pull-parser-2.1.10.pom>https\://repo1.maven.org/maven2/=
+pull-parser-2.1.10.pom>repo52=

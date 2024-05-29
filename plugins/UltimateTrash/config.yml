@@ -1,0 +1,45 @@
+general:
+  random-header-colors: true
+  blacklist-worlds: []
+  temp-trash:
+    time: 30
+    watch-msg: '&c» &4{sec}s &cto auto-clear «'
+    stand-by: '&3After close, the trash will be;&3cleaned in &6{sec}&3 seconds;&b»
+      Trash Auto-Cleaner «'
+strings:
+  tag: '&4[&7UTrash&4]&r '
+  reload: '&aReload with success!'
+  guiname: '&3» Drop Your Trash here!'
+  close: '&4» Close Trash!'
+  clear: '&a» Clear Trash!'
+  blacklist-world: You can't use trash in this world!
+materials:
+  clear:
+    material: YELLOW_WOOL
+    color: 0
+  close:
+    material: RED_WOOL
+    color: 0
+  timer: CLOCK
+  header:
+    '1':
+      material: BLACK_STAINED_GLASS_PANE
+      color: 0
+    '2':
+      material: GRAY_STAINED_GLASS_PANE
+      color: 0
+    '3':
+      material: GREEN_STAINED_GLASS_PANE
+      color: 0
+    '4':
+      material: RED_STAINED_GLASS_PANE
+      color: 0
+    '5':
+      material: BLUE_STAINED_GLASS_PANE
+      color: 0
+    '6':
+      material: LIME_STAINED_GLASS_PANE
+      color: 0
+    '7':
+      material: MAGENTA_STAINED_GLASS_PANE
+      color: 0

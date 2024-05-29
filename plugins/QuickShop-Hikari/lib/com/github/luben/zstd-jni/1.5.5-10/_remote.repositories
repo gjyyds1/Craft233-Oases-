@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:03:24 CST 2024
+zstd-jni-1.5.5-10.jar>https\://maven.aliyun.com/repository/public/=
+zstd-jni-1.5.5-10.jar>https\://repo1.maven.org/maven2/=
+zstd-jni-1.5.5-10.jar>repo7=
+zstd-jni-1.5.5-10.pom>https\://maven.aliyun.com/repository/public/=
+zstd-jni-1.5.5-10.pom>https\://repo1.maven.org/maven2/=
+zstd-jni-1.5.5-10.pom>repo7=

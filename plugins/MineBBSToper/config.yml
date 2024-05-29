@@ -1,0 +1,15 @@
+MineBBSToper:
+  # 填写宣传页面地址
+  # 假设完整地址为"https://www.minebbs.com/threads/no-7-mek-ae-uu.8297/",则此处填写no-7-mek-ae-uu.8297
+  # 假设完整地址为"https://www.minebbs.com/threads/462456/",则此处填写462456
+  web: "19401"
+  # 成功顶贴时执行命令,此处%player%会自动替换为玩家名字
+  suecess:
+    - "bc 玩家%player%获取了MineBBS顶贴的20点券奖励"
+    - "p give %player% 5 golden_apple"
+  # 失败时发送下面消息给玩家
+  failure: "当前并未有顶贴"
+  # 成功顶贴后的冷却时间/秒
+  cooldown: 3600
+  # 冷却时提示
+  cooldown_message: "命令正在冷却中"

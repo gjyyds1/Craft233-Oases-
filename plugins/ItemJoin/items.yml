@@ -1,0 +1,36 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+
+# Modifying the Version will cause this file to break and regenerate.
+items-Version: 8
+
+# General options that apply to the custom items functionality.
+items-Delay: 0
+items-Overwrite: false
+items-Spamming: false
+items-RestrictCount: false
+
+# This is the section that the custom created items will be stored.
+# All created items should be saved under the 'items' section for each 'custom-item' subsection.
+items:
+  devine-item:
+    id: CLOCK
+#    slot: 0
+    name: '&e菜单'
+    lore:
+    - '&a服务器菜单'
+    - '&a手持点击打开'
+    interact:
+    - cd
+    commands-sequence: SEQUENTIAL
+    commands-cost: 0
+    commands-cooldown: 3
+    cooldown-message: '&c物品冷却中，请等待&e%timeleft%&c秒后重试 '
+    attributes: '{GENERIC_ATTACK_DAMAGE:15.2}, {GENERIC_ATTACK_SPEED:19.0}'
+    enchantment:
+    itemflags: unbreakable, hide-flags, self-drops, death-drops
+    triggers: join, respawn, world-switch, region-enter
+    permission-node: itemjoin.ultra
+    enabled-regions: region1, region2
+    enabled-worlds: world, world_nether, world_the_end, resource, exp, resource_end, resource_nether

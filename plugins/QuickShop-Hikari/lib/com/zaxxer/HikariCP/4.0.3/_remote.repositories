@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:04:01 CST 2024
+HikariCP-4.0.3.jar>https\://maven.aliyun.com/repository/public/=
+HikariCP-4.0.3.jar>https\://repo1.maven.org/maven2/=
+HikariCP-4.0.3.jar>repo32=
+HikariCP-4.0.3.pom>https\://maven.aliyun.com/repository/public/=
+HikariCP-4.0.3.pom>https\://repo1.maven.org/maven2/=
+HikariCP-4.0.3.pom>repo32=

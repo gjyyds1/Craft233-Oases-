@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.juliomarcopineda</groupId>
+  <artifactId>jdbc-stream</artifactId>
+  <version>0.1.1</version>
+  <name>JDBC Stream</name>
+  <description>Light-weight library to wrap JDBC ResultSet to Java 8 Stream</description>
+  <url>https://github.com/juliomarcopineda/jdbc-stream</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>juliomarcopineda</id>
+      <name>Julio Marco Pineda</name>
+      <email>juliomarcopineda@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>git@github.com:juliomarcopineda/jdbc-stream.git</connection>
+    <developerConnection>git@github.com:juliomarcopineda/jdbc-stream.git</developerConnection>
+    <url>https://github.com/juliomarcopineda/jdbc-stream</url>
+  </scm>
+</project>

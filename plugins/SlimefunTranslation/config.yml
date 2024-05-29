@@ -1,0 +1,45 @@
+
+# whether to enable search interception
+# enabling this will make player's click on search button in sf guide to start SlimefunTranslation search, instead of Slimefun's search.
+intercept-search: true
+
+# The list of languages that the translations will be disabled.
+# Should be Slimefun language codes.
+disabled-languages: []
+
+# Whether to enable auto update
+auto-update: true
+
+# Print debug messages in console.
+debug: false
+
+# Language mappings
+# Format: <provided language code>: <slimefun language code>
+language-mappings:
+  en-US: en
+  zh-Hans: zh-CN
+  zh-Hant: zh-TW
+
+# Some items (such as swords, armor, tools) may hae extra lore that is added by other plugins.
+# SlimefunTranslation overrides all lore by default, but you can add the materials here to only override the covered lines.
+# For example, an item with the lore:
+#   - "Line 1"
+#   - "Line 2"
+#   - "Line 3 added by another plugin"
+# And the item translation only covers the first 2 lines.
+# If the item's material is not covered in this list, you will not be able to see the third line in translation.
+# If the item's material is covered in this list, you can see only the first 2 lines are translated, and the third line is kept.
+# -----
+# For minecraft MATERIAL, write in "minecraft:material", e.g. "minecraft:stone".
+# You can also use our tag system, in "sft:tag", e.g. "sft:pickaxe".
+# A tag is a set of materials, so you do not need to write every material in the tag, just the tag.
+# Check all the available tags here: https://github.com/ybw0014/SlimefunTranslation/tree/master/src/main/resources/tags
+partial-override-materials:
+- sft:helmet
+- sft:chestplate
+- sft:leggings
+- sft:boots
+- sft:hand_slot
+
+# The list of Slimefun item IDs that should not be translated.
+disabled-items: []

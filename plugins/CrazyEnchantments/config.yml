@@ -1,0 +1,632 @@
+## 货币类型请查看: https://github.com/badbones69/Crazy-Enchantments/wiki/Currency-Types
+## 指令和权限请查看: https://github.com/badbones69/Crazy-Enchantments/wiki/Commands-and-Permissions
+## 1.9+版本请使用这些音效: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+###################################################################
+Settings:
+  Prefix: '&8[&a更多附魔&8]: ' #插件信息前缀
+  Toggle-Metrics: true #开启或关闭发送服务器信息至 https://bstats.org/ - 更改需重启生效
+  Player-Info-Backup-Message: true #你是否能看见玩家的数据背包提醒.
+  Reset-Players-Max-Health: true #重置玩家生命上限,这对某些有其他改变玩家生命上限插件的服务器会叠加,就像CombatTagPlus(v1.2.3以下版本)插件
+  Refresh-Potion-Effects-On-World-Change: false #在奇怪的机会中，药水效果会随着世界的变化而消失。
+  InvName: '&4&l&n更多附魔' # GUI中的名称
+  Enchantment-Book-Item: 'BOOK' #附魔书的物品ID.
+  Enchantment-Book-Glowing: true #开关附魔书是否发光.
+  GUISize: 54 #GUI的大小, 必须是9的倍数
+  EnchantmentBookLore: #附魔书的lore.
+    - '&7拖曳书到物品上来附魔.'
+    - '&7右键获取更多信息.'
+    - ''
+    - '%Description%'
+    - ''
+    - '&4%%Destroy_Rate%% 失败几率'
+    - '&a%%Success_Rate%% 成功几率'
+  LostBook: #尘封之书选项.
+    Item: 'BOOK' #物品ID.
+    Name: '&8&l&n尘封之 %Category%&8&l&n' #名称.
+    Lore: # 描述.
+      - '&7这本书失传已久'
+      - '&7据说是 %Category% '
+      - '&7你必须扫除尘埃,打开它才能知道它是什么等级的.'
+      - '&7&l(&6&l!&7&l) &7右键打开.'
+  Scrambler:
+    Item: 'SUNFLOWER' # 物品ID.
+    Glowing: true #是否开启发光特效.
+    Name: '&e&l命运之&e骰' #物品名称.
+    Lore: #物品描述
+      - '&e&l命运之&e骰 &7可以'
+      - '&7重置失败和成功率。.'
+      - '&7拖曳这个物品到一本附魔书上'
+      - '&7来刷新失败和成功率.'
+    GUI: #菜单选项.
+      Name: '&8命运之&e骰' #GUI名称.
+      Toggle: true #是否在主菜单中显示. 警告>> 如果玩家经常使用这个东西的话可能会造成服务器卡顿.
+      Pointer: #菜单内的指针.
+        Item: 'REDSTONE_TORCH' #指针的ID.
+        Name: '&c&l指针' #名称.
+        Lore: #描述.
+          - '&7新的几率将会降临'
+          - '&在这本附魔书上.'
+    InGUI: true #是否可以在菜单内购买.
+    Slot: 41 #在主菜单内的格子序数.
+    GUIName: '&e&lThe Grand Scrambler' #GUi中显示的物品名称
+    GUILore: #菜单内显示的物品描述.
+      - ' &e&l命运之骰 &7可以'
+      - '&7重置装备的损坏和成功率.'
+      - '&7拖曳这个物品到一本附魔书上'
+      - '&7来获得新的损坏和成功率.'
+      - ''
+      - '&e价格: &e&l10000经验值'
+  Slot_Crystal:
+    InGUI: false #是否在菜单内显示.
+    Slot: 14 #格子序数
+    Item: 'EMERALD' #物品ID
+    Glowing: true #是否有附魔的发光特性
+    Name: '&5&l附魔&b&lC水晶' #物品名
+    Lore: # 物品lore描述
+      - '&7据说是一种稀有的水晶'
+      - '&7可以增加物品的附魔数量'
+      - ''
+      - '&7&l(&6&l!&7&l) &7拖拽这个物品到一个物品上'
+    GUIName: '&&5&l附魔&b&lC水晶'
+    GUILore:
+      - '&7据说是一种稀有的水晶'
+      - '&7可以增加物品的附魔数量'
+      - ''
+      - '&e价格: &e&l$500'
+  GKitz: #套装菜单选项.
+    InGUI: false #是否在主菜单内显示.
+    Enabled: true #是否启用套装.
+    Slot: 1 #格子序数.
+    Item: 'DIAMOND_CHESTPLATE' #物品ID.
+    Glowing: true #是否发光.
+    Name: '&c&l套装' #物品名.
+    Lore: # 物品ID.
+      - '&b>>&7&n点击打开&b<<'
+  ProtectionCrystal:
+    InGUI: true # 是否在菜单内显示.
+    Slot: 14 # 格子序数
+    Item: EMERALD # 物品ID
+    Glowing: true # 是否有附魔的发光特性
+    Protected: '&6远古的祝福' # Lore描述.
+    Lose-Protection-On-Death: true # 是否在玩家死亡后失去保护.
+    Chance: # 保护几率.
+      Toggle: false # 是否启用.
+      Success-Chance: 75 # 保护成功几率.
+    Name: '&5&l守御&b&l水晶' # 物品名
+    Lore: # 物品lore描述
+      - '&7一种罕见的水晶'
+      - '&7当玩家飞升太虚后.'
+      - '&7保护物品不致丢失'
+      - ''
+      - '&7&l(&6&l!&7&l) &7拖曳到一个物品上.'
+    GUIName: '&5&l守御&b&l水晶'
+    GUILore:
+      - '&7据说是一种罕见的水晶'
+      - '&7当玩家飞升太虚后.'
+      - '&7保护物品不致丢失'
+      - ''
+      - '&e价格: &e&l5000经验值'
+  BlackSmith: # 铁匠选项
+    InGUI: true # 是否在主菜单中显示.
+    Slot: 24 # 格子序数.
+    Item: 'ANVIL' # 物品ID
+    Glowing: false # 是否发光.
+    Name: '&b&l铁&9&l匠' # 菜单内的物品名
+    Lore: # 物品Lore.
+      - '&b>>&7&n点击打开&b<<'
+    GUIName: '&8&l铁匠'
+    Results:
+      None: '&c&l无'
+      Not-Found-Lore:
+      - '&7请放置'
+      - '&7一样的附魔和等级的两本书.'
+      - '&7或者把两个物品合成在一起'
+      - '&7在物品上的附魔.'
+      Found: '&c&l价格: &6&l%Cost%XP' # 物品底部的Lore
+    Transaction: # 交易选项
+      Currency: XP_Level
+      Costs: # 价值选项
+        Power-Up: 5 # 附魔升级时增加的价值
+        Add-Enchantment: 3 # 从另一件物品获得附魔时增加的价值
+        Book-Upgrade: 5 # 升级附魔书时增加的价值
+  Tinker: # 工匠菜单设置
+    InGUI: true # 是否在/CE 菜单中显示
+    Slot: 22 # 格子序数
+    Item: NETHER_STAR # 物品ID
+    Glowing: false # 是否发光
+    Name: '&9&l工匠' # 物品名
+    Lore: # 物品lore描述
+      - '&b>>&7&n点击打开&b<<'
+  Info: # 菜单内的介绍物品设置
+    InGUI: true # 是否在/CE 菜单中显示
+    Slot: 23 # 格子序数
+    Item: COMPASS # 物品ID
+    Glowing: true # 是否发光
+    Name: '&e附魔介绍' # 物品名
+    Lore: # 物品lore描述
+      - '&b>>&7&n点击查看&b<<'
+  Dust: # Settings for the Magical Dust
+    MysteryDust:
+      Item: GUNPOWDER # 物品ID
+      Name: '&7神秘尘埃' # 物品名
+      Lore: # 使用%Percent%代表几率
+        - '&a1-%Percent%% &7将会变成一个'
+        - '&a魔法天使尘埃&7或&e魔法修复&7尘埃'
+        - '&7&l(&6&l!&7&l) &7右键点击'
+      Firework:
+        Toggle: true # 打开时是否放烟花.
+        Colors: Black, Gray, Lime # 烟花颜色.
+      Dust-Toggle:
+        Success: true # 开关能否获得成功的尘埃.
+        Destroy: true # 开关能否获得毁坏的尘埃.
+        Failed: true # #开关能否获得尘埃.
+      PercentRange: # 几率.
+        Max: 30 # 最大几率
+    SuccessDust:
+      InGUI: true # 是否可以在 /CE 菜单内购买
+      GUIName: '&a魔法天使尘埃' # 菜单内的名称
+      GUILore: # 菜单内的lore
+        - '&e价格: &a&l100000经验值'
+        - '&7拖曳到附魔书上来使用'
+        - '&7增加&a附魔成功几率&7.'
+      Slot: 25 # 格子序数
+      Item: SUGAR # 物品ID
+      Name: '&魔法天使尘埃' # 尘埃名称
+      Lore: # 尘埃的lore
+        - '&a+%percent%% 成功几率'
+        - '&7拖曳到附魔书上来使用'
+        - '&7增加 &e%Percent%% 的成功几率'
+      PercentRange: # 成功几率范围.
+        Max: 30 # 最高几率
+        Min: 2 # 最低几率
+    DestroyDust:
+      InGUI: true # 是否可以在 /CE 菜单内购买
+      GUIName: '&e魔法修复尘埃' # 菜单内的物品名
+      GUILore: # 菜单内的Lore.
+        - '&e价格: &a&l100000经验值'
+        - '&7拖曳到一个附魔书上来使用'
+        - '&7会降低 &4附魔失败几率&7.'
+      Slot: 34 # 格子序数
+      Item: REDSTONE # 物品ID
+      Name: '&e魔法修复尘埃'
+      Lore: # 尘埃Lore描述
+        - '&c-%percent%% 装备破碎率'
+        - '&7拖曳到一个附魔书上来使用'
+        - '&7减少 &e%percent%% 的附魔失败率'
+      PercentRange: # 破碎率范围.
+        Max: 10 # 最高几率
+        Min: 2 # 最低几率
+    FailedDust:
+      Item: GUNPOWDER
+      Name: '&7灰尘'
+      Lore: # 尘埃Lore描述
+        - '&7败者食尘.'
+        - '&7这个灰尘已经没用了'
+        - '&7不过能用来TNT或一个投掷药水.'
+  BlackScroll: # 黑色卷轴设置
+    Item: INK_SAC
+    Name: '&8&l&n黑色卷轴'
+    Item-Lore:
+    - '&7制作自定义的附魔,你难度不想要吗?'
+    - '&7拖曳卷轴在一个有自定义附魔的物品上'
+    - '&7然后它会重置随机一个附魔并转化为附魔书.'
+    - '&7&l(&6&l!&7&l) &7只能用在自定义附魔物品上'
+    Chance-Toggle: false # 是否启用有效几率.
+    Chance: 75 # 黑色卷轴有效的几率.
+    InGUI: true # 是否在菜单内显示
+    GUIName: '&7黑色卷轴'
+    Glowing: false
+    Slot: 21
+    Lore: # 物品lore描述
+      - '&e价格: &a&l20000经验值'
+      - '&7黑色卷轴可以'
+      - '&7去除随机一个附魔.'
+    SuccessChance: # 成功率
+      Max: 75 # 最大几率
+      Min: 35 # 最小几率
+    DestroyChance: # 失败率
+      Max: 25 # 最大几率
+      Min: 5 # 最小几率
+  WhiteScroll:
+    Item: 'PAPER'
+    Name: '&e&l白色卷轴'
+    Item-Lore:
+      - '&7想要保护一个物品免受书的破坏率?'
+      - '&7拖曳卷轴到一个可附魔的物品上'
+      - '&7然后它会保护一个物品免受书的破坏率.'
+    InGUI: true
+    GUIName: '&7白色卷轴'
+    Glowing: false
+    Slot: 30
+    Lore:
+      - '&e价格: &a&l40000经验值'
+      - '&7白色卷轴可以'
+      - '&7保护物品免受损坏.'
+    ProtectedName: '&b&l神之庇护'
+  TransmogScroll:
+    Item: QUARTZ
+    Name: '&d&l变形卷轴'
+    Item-Lore:
+    - '&7这个卷轴可以让你鉴定出'
+    - '&7在你的物品上'
+    - '&7有多少附魔.'
+    InGUI: false
+    GUIName: '&d变形卷轴'
+    Glowing: false # 是否发光
+    Slot: 30 # 格子序数
+    Lore: # 菜单内的Lore描述
+      - '&e价格: &a&l4000经验值'
+      - '&7这个卷轴可以让你鉴定出'
+      - '&7一件装备上有多少附魔'
+    Amount-of-Enchantments: ' &7[&6&n%amount%&7]' # 物品名前缀.
+    Amount-Toggle: true # 是否把数量添加到物品前缀内.
+    Count-Vanilla-Enchantments: true # 是否算入原版附魔.
+    Lore-Order: #使用变形卷轴时，您希望将知识部分应用于物品的顺序。
+      - 'CE_Enchantments'
+      - 'Protection'
+      - 'Normal_Lore'
+    Add-Blank-Lines: true #指示上面列出的每个知识部分之间是否应该有一个空行。
+  EnchantmentOptions: # 附魔书选项.
+    MaxAmountOfEnchantmentsToggle: true # 启用最大附魔上限. 用 crazyenchantments.limit.# 权限来设置上限.
+    IncludeVanillaEnchantments: false # 是否将原版附魔归为附魔上限内?
+    Enchant-Stacked-Items: false # 是否可用附魔书附魔堆叠的物品.
+    MaxRageLevel: 4 # 怒气附魔的叠加上限.
+    Break-Rage-On-Damage: true # 如果玩家在使用怒气附魔时受伤则失去怒气效果.
+    Rage-Boss-Bar: false #如果为 true，则来自愤怒的消息将显示在 boss 栏上。
+    Rage-Increase: 0.1 #愤怒将增加每次命中附魔等级*愤怒增加的倍数。
+    Right-Click-Book-Description: true # 右击附魔书是否可查看附魔信息.
+    UnSafe-Enchantments: true # 是否允许玩家使用高级附魔.
+    Blast-Full-Durability: true # 是否开启毁灭之镐消耗多倍耐久. 关闭则只消耗1点耐久.
+    VeinMiner-Full-Durability: true
+    Drop-Blocks-For-Blast: true #如果爆炸附魔在使用时掉落方块，请切换。
+    Drop-Blocks-For-VeinMiner: true
+    Right-Click-Enchantment-Table: false # 玩家右击附魔台是否打开/ce 附魔菜单.
+    EXP-Bug: false # 当玩家经验异常时请启用这项设置.
+    Lightning-Sound-Range: 160 # 雷击音效范围.
+    Ally-Mobs: # 友方生物显在其头上显示名称
+      Wolf: '&b%player%的战狼'
+      Iron-Golem: '&6%player%的傀儡'
+      Zombie: '&2%player%的僵尸'
+      Endermite: '&5%player%的末影螨'
+      Silverfish: '&7%player%的蠹虫'
+      Bee: '&e%player%的蜜蜂'
+    Armor-Upgrade: # 启用这项可以让玩家用高级附魔覆盖低级附魔.
+      Toggle: true # 是否可以升级附魔.
+      Enchantment-Break: true # 如果附魔失败则不毁坏物品而是毁坏附魔. 如果关闭则物品会直接被毁.
+    Wings: # 羽翼附魔选项.
+      Clouds: true # 是否显示飞行的粒子特效. 这可能会造成服务器卡顿.
+      Enemy-Toggle: false # 当附近有敌人时关闭羽翼附魔飞行效果.
+      Distance: 0 # 多远内有敌人时关闭飞行.
+      Members-Can-Fly: true # WorldGuard区域内的玩家是否可以飞行.
+      Owners-Can-Fly: true # 开关玩家worldguard区域的主人是否可以飞行.
+      Regions: # 可以飞行的worldguard区域.
+        - Free_Fly
+        - SafeZone
+      Worlds: # 羽翼世界选项.
+        Limitless-Flight-Worlds: # 无飞行限制的世界
+          - Hub_Example
+        Whitelisted: # 羽翼可以在以下世界飞行
+          - Hub_Example
+        Blacklisted: # 羽翼无法在以下区域内无法使用
+          - SkyBlock_Example
+  Costs: # 商店物品价格.
+    Scrambler: # 购买的物品.
+      Cost: 10000 # 价格.
+      Currency: XP_Total # 货币类型.
+    ProtectionCrystal:
+      Cost: 5000
+      Currency: XP_Total
+    TransmogScroll:
+      Cost: 4000
+      Currency: XP_Total
+    BlackScroll:
+      Cost: 20000
+      Currency: XP_Total
+    WhiteScroll:
+      Cost: 40000
+      Currency: XP_Total
+    SuccessDust:
+      Cost: 100000
+      Currency: XP_Total
+    DestroyDust:
+      Cost: 100000
+      Currency: XP_Total
+    Slot_Crystal:
+      Cost: 500
+      Currency: Vault
+  SignOptions: # 告示牌选项.
+    CategoryShopStyle: # 牌子内容. 价格取决于你所选择的附魔类型
+      Line1: '&b&l更多附魔' # 附魔牌子商店第一行
+      Line2: '&b&l商店:' # 牌子第二行
+      Line3: '&2&l%Category%' # 牌子第三行
+      Line4: '&c&l价格: &6&l%Cost%XP' # 牌子第四行
+      Buy-Message: '&7你购买了一本附魔书,为 %BookName%&7 ,等级是 %Category%&7.'
+    ProtectionCrystalStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&5&l守御&b&l水晶'
+      Line4: '&c&l价格: &a&l2000经验值'
+      Buy-Message: '&7你购买了一个 &5&l守御&b&l水晶.' # 购买物品时显示的信息.
+    ScramblerStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&e&l命运之骰'
+      Line4: '&c&l价格: &a&l12000经验值'
+      Buy-Message: '&7你购买了一个 &e&l命运之&e骰&7.' # 购买物品时显示的信息.
+    SuccessDustStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&e&l魔法天使尘埃'
+      Line4: '&c&l价格: &a&l2000经验值'
+      Buy-Message: '&7你购买了一个&a魔法天使尘埃&7.'
+    DestroyDustStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&e&l魔法修复尘埃'
+      Line4: '&c&l价格: &a&l2000经验值'
+      Buy-Message: '&7你购买了一个 &e魔法修复尘埃&7.'
+    BlackScrollStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&4&l黑色&8&l卷轴'
+      Line4: '&c&l价格: &a&l4000经验值'
+      Buy-Message: '&7你购买了一个 &8&l&n黑色卷轴&7.'
+    WhiteScrollStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&f&l白色&b&l卷轴'
+      Line4: '&c&l价格: &a&l4000经验值'
+      Buy-Message: '&7你购买了一个 &e&l白色卷轴&7.'
+    TransmogScrollStyle:
+      Line1: '&b&l更多附魔'
+      Line2: '&b&l商店:'
+      Line3: '&d&l变形&b&l卷轴'
+      Line4: '&c&l价格: &a&l2000经验值'
+      Buy-Message: '&7你购买了一个&d&l变形卷轴&7.'
+  # ####################
+  # Slot:<格子序数> - 物品所在的格子序数.
+  # Item:<物品名> - 物品ID.
+  # Name:<Name> - 物品名称.
+  # Lore:<Line1>,<Line2>,<Line3>,<Line4> - 物品Lore描述，用逗号分隔.如: "Lore:&7I am line1,&aI am line 2,&eI am line3"
+  # 占位符可用于物品名称和物品Lore描述，但必须小写. 
+  # 占位符: %vault% %xp_level% %xp_total%
+  # ####################
+  GUICustomization: #这允许你自定义在GUI中不可点击的物品(默认玻璃板).
+    - 'Slot:1, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:2, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:3, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:4, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:5, Item:BLACK_STAINED_GLASS_PANE, Name: 由Craft233翻译，继承于:qsefthuopq '
+    - 'Slot:6, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:7, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:8, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:9, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:10, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:18, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:19, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:27, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:28, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:36, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:37, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:45, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:46, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:47, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:48, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:49, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:50, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:51, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:52, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:53, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:54, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:11, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:12, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:13, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:14, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:15, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:16, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:17, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:20, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:26, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:29, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:35, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:38, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:39, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:40, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:41, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:42, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:43, Item:WHITE_STAINED_GLASS_PANE, Name: '
+    - 'Slot:44, Item:WHITE_STAINED_GLASS_PANE, Name: '
+Categories: # 附魔类别
+  Common: # 附魔类别名
+    Name: '&a&l&n[普通]附魔书' # 菜单内的名称
+    Slot: 31 # 格子序数
+    InGUI: true # 物品在菜单内显示.
+    Lore: # 物品lore描述
+      - '&e价格: &6&l12000 &6经验值'
+      - '&e可获得I-II级的附魔书'
+    Item: LIME_STAINED_GLASS_PANE # 物品ID
+    Glowing: true # 是否发光
+    Cost: 12000 # 价格.
+    Currency: XP_total # 使用的货币类型.
+    Rarity: 1 # 稀有度. 数值越高越稀有.
+    LostBook: # 是否开启尘封之书
+      InGUI: false # 是否在菜单内显示
+      Slot: 31 # 格子序数
+      Item: BOOK # 物品ID
+      Glowing: false # 是否有附魔光效
+      Name: '&8&l&n尘封之&c&lTier1'
+      Lore: # 物品Lore描述
+        - '&7这些就是失传已久的书'
+        - '&7传说是 &c&lTier1 .'
+        - '&但没人尝试打开这本书.'
+        - '&7你想要扫除尘埃,打开这本书吗?'
+        - ''
+        - '&c&l价格: &6&l20000经验值'
+      Cost: 20000
+      Currency: XP_Total
+      FireworkToggle: true # 打开尘封之书时是否播放烟花特效
+      FireworkColors: 'Red, White, Blue' # 烟花颜色
+      Sound-Toggle: false
+      Sound: BLOCK_ANVIL_PLACE
+    EnchOptions: # 附魔选项
+      SuccessPercent: # 成功率范围
+        Max: 90
+        Min: 40
+      DestroyPercent: # 破碎率范围
+        Max: 10 # 最大几率
+        Min: 0 # 最小几率
+      MaxLvlToggle: true # 是否开启稀有度范围
+      LvlRange: # 可获得以下稀有度的附魔
+        Max: 2
+        Min: 1
+  Rare:
+    Name: '&9&l&n[稀有]附魔书'
+    Slot: 32
+    InGUI: true
+    Lore:
+    - '&e价格: &6&l24000 &6经验值'
+    - '&e可获得稀有的附魔书'
+    Item: BLUE_STAINED_GLASS_PANE
+    Glowing: true
+    Cost: 24000
+    Currency: XP_total
+    Rarity: 2
+    LostBook:
+      InGUI: false
+      Slot: 32
+      Item: BOOK
+      Glowing: false
+      Name: '&8&l&n尘封之&c&lTier2'
+      Lore:
+      - '&7这些就是失传已久的书'
+      - '&7传说是 &c&lTier1  .'
+      - '&但没人尝试打开这本书.'
+      - '&7你想要扫除尘埃,打开这本书吗?'
+      - ''
+      - '&c&l价格: &6&l6000经验值'
+      Cost: 6000
+      Currency: XP_Total
+      FireworkToggle: true
+      FireworkColors: 'Black, Yellow'
+      Sound-Toggle: false
+      Sound: BLOCK_ANVIL_PLACE
+    EnchOptions:
+      SuccessPercent:
+        Max: 70
+        Min: 35
+      DestroyPercent:
+        Max: 25
+        Min: 10
+      MaxLvlToggle: true
+      LvlRange:
+        Max: 3
+        Min: 2
+  Legendary:
+    Name: '&e&l&n[传说]附魔书'
+    Slot: 33
+    InGUI: true
+    Lore:
+    - '&e价格: &6&l114514 &6经验值'
+    - '&e可获得高级的附魔'
+    Item: RED_STAINED_GLASS_PANE
+    Glowing: true
+    Cost: 114514
+    Currency: XP_total
+    Rarity: 3
+    LostBook:
+      InGUI: false
+      Slot: 33
+      Item: BOOK
+      Glowing: false
+      Name: '&8&l&n尘封之&c&lTier3'
+      Lore:
+      - '&7这些就是失传已久的书'
+      - '&7传说是 &c&lTier1 .'
+      - '&7但没人尝试打开这本书.'
+      - '&7你想要扫除尘埃,打开这本书吗?'
+      - ''
+      - '&c&l价格: &6&l6000经验值'
+      Cost: 6000
+      Currency: XP_Total
+      FireworkToggle: true
+      FireworkColors: 'White, Gray'
+      Sound-Toggle: false
+      Sound: BLOCK_ANVIL_PLACE
+    EnchOptions:
+      SuccessPercent:
+        Max: 50
+        Min: 25
+      DestroyPercent:
+        Max: 35
+        Min: 15
+      MaxLvlToggle: true
+      LvlRange:
+        Max: 5
+        Min: 3
+  # Mythical:
+  #   Name: '&5&l&n[神话]附魔书'
+  #   Slot: 41
+  #   InGUI: true
+  #   Lore:
+  #     - '&e价格: &6&l120 &6XP 经验等级'
+  #   Item: 'AMETHYST_CLUSTER'
+  #   Glowing: true
+  #   Cost: 120
+  #   Currency: XP_Level
+  #   Rarity: 10
+  #   LostBook:
+  #     InGUI: false
+  #     Slot: 41
+  #     Item: 'BOOK'
+  #     Glowing: false
+  #     Name: '&8&l&n尘封之&c&lTier10'
+  #     Lore:
+  #     - '&7这些就是失传已久的书'
+  #     - '&7传说是 &c&lTier10 .'
+  #     - '&7但没人尝试打开这本书.'
+  #     - '&7你想要扫除尘埃,打开这本书吗?'
+  #       - ''
+  #       - '&c&l价格: &6&l$10000'
+  #     Cost: 10000
+  #     Currency: Vault
+  #     FireworkToggle: true
+  #     FireworkColors: 'White, Gray'
+  #     Sound-Toggle: false
+  #     Sound: 'BLOCK_ANVIL_PLACE'
+  #   EnchOptions:
+  #     SuccessPercent:
+  #       Max: 15
+  #       Min: 1
+  #     DestroyPercent:
+  #       Max: 95
+  #       Min: 20
+  #     MaxLvlToggle: true
+  #     LvlRange:
+  #       Max: 10
+  #       Min: 1
+      Glowing: false
+      Name: '&8&l&n尘封之&c&lTier3'
+      Lore:
+      - '&7这些就是失传已久的书'
+      - '&7传说是 &c&lTier1 .'
+      - '&7但没人尝试打开这本书.'
+      - '&7你想要扫除尘埃,打开这本书吗?'
+      - ''
+      - '&c&l价格: &6&l6000经验值'
+      Cost: 6000
+      Currency: XP_Total
+      FireworkToggle: true
+      FireworkColors: White, Gray
+      Sound-Toggle: false
+      Sound: BLOCK_ANVIL_PLACE
+    EnchOptions:
+      SuccessPercent:
+        Max: 50
+        Min: 25
+      DestroyPercent:
+        Max: 35
+        Min: 15
+      MaxLvlToggle: true
+      LvlRange:
+        Max: 5
+        Min: 3

@@ -1,0 +1,44 @@
+# Enable or disable inscription about 1.14 instruments
+# Включает или выключает надпись о новых инструментах из 1.14
+printNewInstrument: true
+# bStats send
+# Включить или выключить метрику(пожалуйста не вырубай, а то сидишь дома, печаль, печеньки кончились,
+# и вот на метрику смотришь и понимаешь что твой плагин кому то нужен, и уже легче становится)
+# Если вырубишь, то к тебе со спины придёт крипер, и взорвёт тебя вместе с алмазами, так что я бы на твоём месте подумал
+bStats: true
+economy:
+  # Enable song sold by /musicbox shop
+  # Включает продажу пластинок
+  enable: true
+  # Price for disc
+  # Цена за диск в магазине
+  price: 500
+# Maximum sound distance in speaker mode
+# Максимальная длина звука в режиме колонки
+speakerRadius: 10
+# Music bossbar setting
+# Настройки музыкального боссбара
+bossbar:
+  # Enable or disable bossbar
+  # Включает или выключает боссбар
+  enable: true
+  color: GREEN
+  style: SEGMENTED_20
+# Language setting
+# Настройки языка, есть ru и en
+lang: en
+# Radius in which disc's will be heard from this plugin
+# Как далеко будет слышно пластинки из этого плагина
+jukeboxRadius: 64
+# Enable or disable autodestroy range player if nobody hear him (Speaker mode, Sign,Jukeboxes) Time in seconds(0 disable)
+# Включить или выключить автоуничтожение проигрывателей если никто их не слышит в течении N секунд
+autoDestroy: 60
+# Нужно ли проверять пекс musicbox.hear. По дефолту он не проверяется и все могут слышать музыку,
+# но вдруг вам сильно приспичило и надо прям, тогда ставим true и теперь никто без этого пекса слышать музыку не может
+# ----
+# Whether it is necessary to check the pex of musicbox.hear. By default, it is not checked and everyone can hear music
+# but if you need it, then set to true and now no one can hear music without this pex
+hearPermissionsCheck: false
+# Enables support for octaves outside minecraft's default 2, which requires a resource pack to hear.
+# If false, notes outisde of the octave range are automatically transposed into it
+enable10octave: false

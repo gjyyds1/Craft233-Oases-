@@ -1,0 +1,52 @@
+open_command:
+  - 'shopmenu'
+size: 27
+menu_title: '&e商店菜单'
+items:
+  '出售价格表':
+    material: FILLED_MAP
+    date: 1
+    slot: 10
+    display_name: "&a出售价格表"
+    lore:
+      - "&e出售物品的价格表"
+    right_click_commands:
+      - "[player] itempricesell"
+    left_click_commands:
+      - "[player] itempricesell"
+
+  'GUI出售':
+    material: glow_item_frame
+    date: 1
+    slot: 13
+    display_name: "&aGUI出售物品"
+    lore: 
+      - "&e以GUI菜单的方式出售想要卖出的物品"
+      - "&a也可可以使用/sellall出售"
+    right_click_commands:
+      - "[player] sellgui"
+    left_click_commands:
+      - "[player] sellgui"
+  
+  'shop':
+    material: chest
+    date: 1
+    slot: 16
+    display_name: "&a前往商店"
+    lore: 
+      - "&e点击前往位于主城的商店区"
+    right_click_commands:
+      - "[player] huskhomes:warp shop"
+    left_click_commands:
+      - "[player] huskhomes:warp shop"
+
+
+  'back':
+    material: WHITE_STAINED_GLASS_PANE
+    date: 1
+    slot: 18
+    display_name: "&e返回上一级"
+    right_click_commands:
+      - "[player] cd"
+    left_click_commands:
+      - "[player] cd"

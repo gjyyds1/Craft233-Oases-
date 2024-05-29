@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:05:45 CST 2024
+jaxb-api-2.2.12.jar>https\://maven.aliyun.com/repository/public/=
+jaxb-api-2.2.12.jar>https\://repo1.maven.org/maven2/=
+jaxb-api-2.2.12.jar>repo52=
+jaxb-api-2.2.12.pom>https\://maven.aliyun.com/repository/public/=
+jaxb-api-2.2.12.pom>https\://repo1.maven.org/maven2/=
+jaxb-api-2.2.12.pom>repo52=

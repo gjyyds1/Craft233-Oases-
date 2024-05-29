@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "neokoni",
+      "uniqueId": "a595fa1d-7823-3327-ac0d-cfaa28f43c2e"
+    },
+    "time": 1713098704289,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/kOR50vaQZ9"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "neokoni",
+      "uniqueId": "a595fa1d-7823-3327-ac0d-cfaa28f43c2e"
+    },
+    "time": 1713098701690,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/IFOE5yKJOL"
+    }
+  }
+]

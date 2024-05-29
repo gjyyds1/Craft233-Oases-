@@ -1,0 +1,110 @@
+Settings:
+  GUI-Size: 27 #必须是9的倍数.
+  Inventory-Name: '&8套装列表'
+  GUI-Customization: #自定义GUI
+    - 'Slot:1, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:2, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:3, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:4, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:5, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:6, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:7, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:8, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:9, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:10, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:11, Item:GRAY_STAINED_GLASS_PANE, Name: '
+    - 'Slot:13, Item:GRAY_STAINED_GLASS_PANE, Name: '
+    - 'Slot:15, Item:GRAY_STAINED_GLASS_PANE, Name: '
+    - 'Slot:17, Item:GRAY_STAINED_GLASS_PANE, Name: '
+    - 'Slot:18, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:19, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:20, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:21, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:22, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:23, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:24, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:25, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:26, Item:BLACK_STAINED_GLASS_PANE, Name: '
+    - 'Slot:27, Item:BLACK_STAINED_GLASS_PANE, Name: '
+###################################
+#             物品: 选项
+# Item:<Item Name> - The item that it will be. You can use meta data for the items. List of names: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# Amount: <Number> - Choose how many of the item you get.
+# Name: <Name> - The display name that goes on the item.
+# Lore: <Line 1>,<Line 2>,<Line 3>,<Line 4> - The lore that will go under the enchantments. Split lines with a ','
+# <Enchantment>:<Level> - Choose vanilla enchantments here.
+# <Custom Enchantment>:<Level> - Choose a custom enchantments here.
+# To chose a random level for the custom or vanilla enchantments use like this '<Custom/Enchantment>:<Min Level>-<Max Level>'
+# Example of this is shows here.
+# Overload:1-5, Hulk:1-5 << this will add Hulk and Overload and pick a random level from 1-5 and set it as the power.
+###################################
+GKitz: #套装选项.
+  Hero: #套装名.
+    Display: #菜单显示选项.
+      Slot: 12 #格子序数.
+      Item: 'ORANGE_STAINED_GLASS_PANE' #物品ID.
+      Glowing: true #附魔光效开关.
+      Name: '&6&l英雄套装' #显示的套装名.
+      Lore: #描述.
+        - '&7英雄在战争中用过的装备'
+        - ''
+        - '&7冷却: &624 小时'
+        - '&7可用时间: &6%Day%d, %Hour%h, %Minute%m, %Second%s'
+        - '&7&l(&6&l!&7&l) &7右键预览'
+    Auto-Equip: false #是否自动穿戴套装.
+    Cooldown: '24h' #使用冷却. 可用选项为 d - 天, h - 时, m - 分, s - 秒
+    Items: #给予玩家的装备
+      - 'Item:DIAMOND_HELMET, Amount:1, Name:&6&l英雄头盔, Protection:4, Respiration:3, Thorns:3, Aqua_Affinity:1, Overload:1-5, Hulk:2-5, Glowing:0-1, Implants:0-5, Lore:&a身经百战的英雄曾穿戴的头盔.'
+      - 'Item:DIAMOND_CHESTPLATE, Amount:1, Name:&6&l英雄胸甲, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&a身经百战的英雄曾穿戴的胸甲.'
+      - 'Item:DIAMOND_LEGGINGS, Amount:1, Name:&6&l英雄护腿, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&a身经百战的英雄曾穿戴的护腿.'
+      - 'Item:DIAMOND_BOOTS, Amount:1, Name:&6&l英雄之靴, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Gears:0-3, Rocket:1, Anti-Gravity:0-5, Lore:&a身经百战的英雄曾穿戴的靴子.'
+    Fake-Items: #Items the user doesn't accrual get but can be used to show an item you get from a command.
+      - 'Item:BOOK, Amount:1, Name:&b&l生命之源 V, Lore:&7提升你的生命值.'
+    Commands: #用指令给予玩家其它物品
+      - 'ce book overload 5 1 %Player%'
+  PeaceKeeper:
+    Display:
+      Slot: 14
+      Item: 'BLUE_STAINED_GLASS_PANE'
+      Glowing: true
+      Name: '&9&l和平守护者套装'
+      Lore:
+        - '&7和平守护者在战争中用过的装备'
+        - ''
+        - '&7冷却: &624 小时'
+        - '&7可用时间: &6%Day%d, %Hour%h, %Minute%m, %Second%s'
+        - '&7&l(&9&l!&7&l) &7右键预览'
+    Auto-Equip: false
+    Cooldown: '24h'
+    Items:
+      - 'Item:DIAMOND_HELMET, Amount:1, Name:&9&l和平守护者头盔, Protection:4, Respiration:3, Thorns:3, Aqua_Affinity:1, Overload:1-5, Hulk:2-5, Glowing:0-1, Implants:0-5, Lore:&9和平守护者曾穿戴的头盔.'
+      - 'Item:DIAMOND_CHESTPLATE, Amount:1, Name:&9&l和平守护者胸甲, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&9和平守护者曾穿戴的胸甲.'
+      - 'Item:DIAMOND_LEGGINGS, Amount:1, Name:&9&lPeace Keeper Leggings, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&9和平守护者曾穿戴的护腿.'
+      - 'Item:DIAMOND_BOOTS, Amount:1, Name:&9&lPeace Keeper Boots, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Gears:0-3, Rocket:1, Anti-Gravity:0-5, Lore:&9和平守护者曾穿戴的靴子.'
+    Fake-Items:
+      - 'Item:BOOK, Amount:1, Name:&b&l生命之源 V, Lore:&7提升你的生命值'
+    Commands:
+      - 'ce book overload 5 1 %Player%'
+  Villain:
+    Display:
+      Slot: 16
+      Item: 'RED_STAINED_GLASS_PANE'
+      Glowing: true
+      Name: '&4&l反派套装'
+      Lore:
+        - '&7坏人在战争中用过的装备'
+        - ''
+        - '&7冷却: &624 小时'
+        - '&7可用时间: &6%Day%d, %Hour%h, %Minute%m, %Second%s'
+        - '&7&l(&4&l!&7&l) &7右键预览'
+    Auto-Equip: false
+    Cooldown: '24h'
+    Items:
+      - 'Item:DIAMOND_HELMET, Amount:1, Name:&4&l邪恶头盔, Protection:4, Respiration:3, Thorns:3, Aqua_Affinity:1, Overload:1-5, Hulk:2-5, Glowing:0-1, Implants:0-5, Lore:&c邪恶的反派曾穿戴的头盔.'
+      - 'Item:DIAMOND_CHESTPLATE, Amount:1, Name:&4&l邪恶胸甲, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&c邪恶的反派曾穿戴的胸甲.'
+      - 'Item:DIAMOND_LEGGINGS, Amount:1, Name:&4&l邪恶护腿, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Lore:&c邪恶的反派曾穿戴的护腿.'
+      - 'Item:DIAMOND_BOOTS, Amount:1, Name:&4&l邪恶之靴, Protection:4, Thorns:3, Overload:0-5, Hulk:2-5, Gears:0-3, Rocket:1, Anti-Gravity:0-5, Lore:&c邪恶的反派曾穿戴的靴子.'
+    Fake-Items:
+      - 'Item:BOOK, Amount:1, Name:&b&l生命之源 V, Lore:&7提升你的生命值'
+    Commands:
+      - 'ce book overload 5 1 %Player%'

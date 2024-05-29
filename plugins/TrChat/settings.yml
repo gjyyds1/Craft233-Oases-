@@ -1,0 +1,43 @@
+Options:
+  Check-Update: true
+  Proxy: VELOCITY
+  Log-Normal: '[{0}] {1}: {2}'
+  Log-Private: '[{0}] {1} -> {2}: {3}'
+  Log-Delete-Time: 3
+  Depend-Expansions: ['player', 'server']
+  Prevent-Tab-Complete: false
+  Component-Max-Length: 32766
+  Kether-Allow-Tolerance-Parser: true
+
+Channel:
+  Default: 'Global'
+
+Database:
+  Method: SQLite
+  SQL:
+    host: 127.0.0.1
+    port: 3306
+    user: trchat
+    password: 7A47znB668NMctT4
+    database: trchat
+    table: trchat_user_data
+
+Redis:
+  enabled: false
+  host: 127.0.0.1
+  port: 6379
+  user: ~
+  password: craft233_redis
+  connect: 32
+  timeout: 1000
+
+Chat:
+  Anti-Repeat: 0
+  Cooldown: '0.0s'
+  Length-Limit: 100
+
+Color:
+  Chat: true
+  Sign: true
+  Anvil: true
+  Book: true

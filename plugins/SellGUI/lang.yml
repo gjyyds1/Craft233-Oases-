@@ -1,0 +1,28 @@
+menu-title: '&e&l出售菜单'
+#Title of /sellgui
+menu-pane-name: ''
+#The filler item name
+sell-item-name: '&a&l确认出售？'
+#The name of the item you click to sell items
+sell-item-lore:
+  - '&7将要售卖的物品放在上面'
+  - '&d一旦出售，概不退还!'
+#The Lore of the item that you click to sell
+not-a-command: '&e找不到这个指令喵Σ( ° △ °|||)︴'
+#When you enter an invalid command
+confirm-item-name: '&e&l点击确认出售'
+#Name of the item you click to finalize your sell
+item-total-format: '&7%amount%&r&7x %item%&f: &6&l$&a&l%total%'
+#Placeholders: %amount%, %total%, %item%, %price%, %total% | In the GUI confirm item
+total-format: '&f&lTotal: $&r&b%total%'
+#Placeholders: %total% | At the bottom of all the items
+sold-message: '&7你一共出售了&e&l$&r&f%total%'
+#Placeholders: total | After you sell the items.
+sellall-confirm-message: '&c你真的确认出售这些物品吗? 一旦出售，无法找回. 确认请输入&e/sellall confirm'
+#Message to confirm sellall
+sign-lines:
+  - '&a出馊物品'
+  - '右键'
+  - '来'
+  - '出售物品'
+#What a SellGUI sign would say.

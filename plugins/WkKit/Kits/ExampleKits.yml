@@ -1,0 +1,58 @@
+# Cron表达式生成器：http://cron.ciding.cc/
+NCKit:
+  # 礼包的展示名
+  Name: §e新人礼包
+  # 礼包的展示图标
+  Icon: CHEST
+  # 指令可选择CMD、OP,不填则为该玩家自己发送
+  # 变量{player}代表触发指令的玩家
+  Commands:
+  - CMD:give {player} apple
+  - OP:give {player} apple
+  - give {player} apple
+  Lore:
+  - §b| 礼包介绍： §8送给小萌新的礼物
+  - §b| 礼包内含：
+  - §8| 苹果 * 64
+  - §8| 铁质套装 * 1
+  - §8| 面包 * 10
+  - §8| 牛奶 * 8
+  Item:
+  - '{Count:2b,id:"minecraft:apple"}'
+  - '{Count:1b,id:"minecraft:iron_helmet",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:iron_chestplate",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:iron_leggings",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:iron_boots",tag:{Damage:0}}'
+  - '{Count:32b,id:"minecraft:bread"}'
+  - '{Count:1b,id:"minecraft:milk_bucket"}'
+  - '{Count:1b,id:"minecraft:iron_axe",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:iron_pickaxe",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:iron_shovel",tag:{Damage:0}}'
+  - '{Count:1b,id:"minecraft:wooden_hoe",tag:{Damage:0,display:{Name:''"木锄用于圈地"''}}}'
+  - |-
+    {Count:1b,id:"minecraft:writable_book",tag:{pages:["欢迎来到oases
+
+    可能用到的提示
+
+
+    1.菜单：功能尚未完善，一些内容将逐步添加，菜单会汇集一些主要功能
+    2./rtp或/res rt随机传送
+    3.手拿物品单击箱子创建商店
+    4./co i 开关方块历史查询
+    5.使用/skin或者/bskin可以设置皮肤，详情请查看Craft233文档
+    ","6.自杀为/suicide或/自杀
+    7.支持brewery酿酒
+    8.原版地形在资源世界
+    `~~~~~想不起了~~~~"]}}
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'
+  - '{Count:1b,id:"minecraft:potion",tag:{CustomPotionColor:16777215,HideFlags:32,Potion:"minecraft:empty",PublicBukkitValues:{"brewery:brewdata":[B;86B,1B,0B,0B,10B,45B,3B,0B,0B,0B,0B,0B,9B,-28B,-68B,-113B,-25B,-119B,-71B,-27B,-118B,-96B,0B,0B,0B,15B,1B,0B,2B,83B,73B,0B,6B,80B,79B,84B,65B,84B,79B,0B,0B,0B,10B]},display:{Lore:[''{"text":"","extra":["§u"]}'',''{"text":"","extra":["§s",{"text":"⭑⭑⭑⭑⭑","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'',''{"text":"","extra":["§p",{"text":"3次
+    蒸馏","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}''],Name:''{"text":"","extra":[{"text":"纯正俄式风味伏特加","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}''}}}'

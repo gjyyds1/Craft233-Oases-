@@ -1,0 +1,35 @@
+2024-02-01 11:46:42 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.message.DbException.get(DbException.java:212)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.db.Store.close(Store.java:402)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1261)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.engine.Database.closeImpl(Database.java:1225)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.engine.Database.close(Database.java:1144)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 7 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.IllegalStateException: zip file closed [2.1.214/3]
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2052)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.compactFile(MVStore.java:2282)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.closeStore(MVStore.java:1329)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.close(MVStore.java:1291)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.db.Store.close(Store.java:386)
+	... 5 more
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:840)
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:339)
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:517)
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:472)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:209)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.findChunksToMove(MVStore.java:2103)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2064)
+	at QuickShop-Hikari-5.2.0.14.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2041)
+	... 9 more

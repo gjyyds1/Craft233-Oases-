@@ -1,0 +1,23 @@
+#example:
+#  material: STONE
+#  name: "&c&lExample Custom Item"
+#  glimmer: true
+#  slot: 45
+#  lore:
+#    - "Sample Lore"
+#    - "Optional"
+#  commands:
+#    - "broadcast example item broadcast"
+#    - "minecraft:give %player% minecraft:stone 1"
+#
+#[label]: = can be anything, not used in-game
+#   material: [material name] = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+#   name: "[name]" = Name of the item
+#   glimmer: [boolean] = True or false, gives enchantment shimmer when true
+#   slot: [number] = Slot of the item https://proxy.spigotmc.org/286cf93278ca679cecf2a40528fd830418b75d4a?url=http%3A%2F%2Fi.imgur.com%2FgK9plGo.png
+#   lore: = lore list of the item, can be empty. For no lore do "lore: " with no trailing lines of strings
+#     - "[Line]"
+#   commands: = Commands to be executed by console when item is clicked
+#     - "[command]"
+#
+# For multiple custom items: repeat the same format with a different label

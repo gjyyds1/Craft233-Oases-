@@ -1,0 +1,10 @@
+fumo:
+  Name: §6Server Kit
+  Icon: REDSTONE
+  Lore:
+  - 'null'
+  Item: []
+  Times: 1
+  Commands:
+  - CMD:xp add {player} 500 levels
+  - CMD:eco give {player} 50000

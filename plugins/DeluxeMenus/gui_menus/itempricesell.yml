@@ -1,0 +1,336 @@
+open_command: 
+  - 'itempricesell'
+size: 54
+menu_title: '&e出售价格'
+items: 
+  '煤矿石':
+    material: COAL_ORE
+    date: 1
+    slot: 0
+    display_name: "&f煤矿石"
+    lore: 
+      - "&e出售价格: 2.0/1个"
+  '深板岩煤矿石':
+    material: DEEPSLATE_COAL_ORE
+    date: 1
+    slot: 1
+    display_name: "&f深板岩煤矿石"
+    lore: 
+      - "&e出售价格: 3.0/1个"
+  '铁矿石':
+    material: IRON_ORE
+    date: 1
+    slot: 2
+    display_name: "&f铁矿石"
+    lore: 
+      - "&e出售价格: 8.0/1个"
+  '深板岩铁矿石':
+    material: DEEPSLATE_IRON_ORE
+    date: 1
+    slot: 3
+    display_name: "&f深板岩铁矿石"
+    lore: 
+      - "&e出售价格: 10.0/1个"
+  '铜矿石':
+    material: COPPER_ORE
+    date: 1
+    slot: 4
+    display_name: "&f铜矿石"
+    lore: 
+      - "&e出售价格: 3.5/1个"
+  '深板岩铜矿石':
+    material: DEEPSLATE_COPPER_ORE
+    date: 1
+    slot: 5
+    display_name: "&f深板岩铜矿石"
+    lore: 
+      - "&e出售价格: 5.0/1个"
+  '金矿石':
+    material: GOLD_ORE
+    date: 1
+    slot: 6
+    display_name: "&f金矿石"
+    lore: 
+      - "&e出售价格: 13.0/1个"
+  '深板岩金矿石':
+    material: DEEPSLATE_GOLD_ORE
+    date: 1
+    slot: 7
+    display_name: "&f深板岩金矿石"
+    lore: 
+      - "&e出售价格: 15.0/1个"
+  '红石矿':
+    material: REDSTONE_ORE
+    date: 1
+    slot: 8
+    display_name: "&f红石矿"
+    lore: 
+      - "&e出售价格: 5.0/1个"
+  '深板岩红石':
+    material: DEEPSLATE_REDSTONE_ORE
+    date: 1
+    slot: 9
+    display_name: "&f深板岩红石"
+    lore: 
+      - "&e出售价格: 8.0/1个"
+  '青金石':
+    material: LAPIS_ORE
+    date: 1
+    slot: 10
+    display_name: "&f青金石"
+    lore: 
+       - "&e出售价格: 13.0/1个"
+  '深板岩青金石':
+     material: DEEPSLATE_LAPIS_ORE
+     date: 1
+     slot: 11
+     display_name: "&f深板岩青金石"
+     lore: 
+       - "&e出售价格: 15.0/1个"  
+  '钻石矿':
+     material: DIAMOND_ORE 
+     date: 1 
+     slot: 12 
+     display_name: "&f钻石" 
+     lore: 
+       - "&e出售价格: 30.0/1个"  
+  '深板岩钻石':
+     material: DEEPSLATE_DIAMOND_ORE 
+     date: 1 
+     slot: 13 
+     display_name: "&f深板岩钻石" 
+     lore: 
+       - "&e出售价格: 30.0/1个"  
+  '绿宝石':
+     material: EMERALD_ORE 
+     date: 1 
+     slot: 14 
+     display_name: "&f绿宝石" 
+     lore: 
+       - "&e出售价格: 16.0/1个"  
+  '深板岩绿宝石':
+     material: DEEPSLATE_EMERALD_ORE 
+     date: 1 
+     slot: 15 
+     display_name: "&f深板岩绿宝石" 
+     lore: 
+       - "&e出售价格: 18.0/1个"  
+  '下界金矿':
+     material: NETHER_GOLD_ORE 
+     date: 1 
+     slot: 16 
+     display_name: "&f下界金矿" 
+     lore: 
+       - "&e出售价格: 4.0/1个"  
+  '下界石英':
+     material: NETHER_QUARTZ_ORE 
+     date: 1 
+     slot: 17 
+     display_name: "&f下界石英" 
+     lore: 
+       - "&e出售价格: 3.5/1个"  
+  '远古残骸':
+     material: ANCIENT_DEBRIS
+     date: 1
+     slot: 18
+     display_name: "&f远古残骸"
+     lore: 
+       - "&e出售价格: 40.0/1个"
+  '粗铁':
+    material: RAW_IRON
+    date: 1
+    slot: 19
+    display_name: "&f粗铁"
+    lore: 
+      - "&e出售价格: 4.0/1个"
+  '粗铜':
+    material: RAW_COPPER
+    date: 1
+    slot: 20
+    display_name: "&f粗铜"
+    lore: 
+      - "&e出售价格: 2.0/1个"
+  '粗金':
+    material: RAW_GOLD
+    date: 1
+    slot: 21
+    display_name: "&f粗金"
+    lore: 
+      - "&e出售价格: 6.0/1个"
+  '下界合金碎片':
+    material: NETHERITE_SCRAP
+    date: 1
+    slot: 22
+    display_name: "&f下界合金碎片"
+    lore: 
+      - "&e出售价格: 45.0/1个"
+  '下界合金锭':
+    material: NETHERITE_INGOT
+    date: 1
+    slot: 23
+    display_name: "&f下界合金锭"
+    lore: 
+      - "&e出售价格: 70.0/1个"
+  '石英':
+    material: QUARTZ
+    date: 1
+    slot: 24
+    display_name: "&f石英"
+    lore: 
+      - "&e出售价格: 2.0/1个"
+  '海洋之心':
+    material: HEART_OF_THE_SEA
+    date: 1
+    slot: 25
+    display_name: "&f海洋之心"
+    lore: 
+      - "&e出售价格: 100.0/1个"
+  '花岗岩':
+    material: GRANITE
+    date: 1
+    slot: 26
+    display_name: "&f花岗岩"
+    lore: 
+      - "&e出售价格: 0.3/1个"
+  '闪长岩':
+    material: DIORITE
+    date: 1
+    slot: 27
+    display_name: "&f闪长岩"
+    lore: 
+      - "&e出售价格: 0.3/1个"
+  '安山岩':
+    material: ANDESITE
+    date: 1
+    slot: 28
+    display_name: "&f安山岩"
+    lore: 
+      - "&e出售价格: 0.3/1个"
+  '哭泣的黑曜石':
+    material: CRYING_OBSIDIAN
+    date: 0
+    slot: 29
+    display_name: "&f哭泣的黑曜石"
+    lore: 
+      - "&e出售价格: 10.0/1个"
+  '胡萝卜':
+    material: CARROT
+    date: 0
+    slot: 30
+    display_name: "&f胡萝卜"
+    lore: 
+      - "&e出售价格: 0.3/1个"
+  '马铃薯':
+    material: POTATO
+    date: 0
+    slot: 31
+    display_name: "&f马铃薯"
+    lore: 
+      - "&e出售价格: 0.3/1个"
+  '苹果':
+    material: APPLE
+    date: 0
+    slot: 32
+    display_name: "&f苹果"
+    lore:
+      - "&e出售价格: 1.0/1个"
+  '甜菜根':
+    material: BEETROOT
+    date: 0
+    slot: 33
+    display_name: "&f甜菜根"
+    lore:
+      - "&e出售价格: 0.4/1个"
+  '小麦':
+    material: WHEAT
+    date: 0
+    slot: 34
+    display_name: "&f小麦"
+    lore:
+      - "&e出售价格: 0.4/1个"
+  '小麦种子':
+    material: WHEAT_SEEDS
+    date: 0
+    slot: 35
+    display_name: "&f小麦种子"
+    lore:
+      - "&e出售价格: 0.02/1个"
+  '甜菜根种子':
+    material: BEETROOT_SEEDS
+    date: 0
+    slot: 36
+    display_name: "&f甜菜根种子"
+    lore:
+      - "&e出售价格: 0.02/1个"
+  '西瓜':
+    material: MELON
+    date: 0
+    slot: 37
+    display_name: "&f西瓜"
+    lore:
+      - "&e出售价格: 0.5/1个"
+  '南瓜':
+    material: PUMPKIN
+    date: 0
+    slot: 38
+    display_name: "&f南瓜"
+    lore:
+      - "&e出售价格: 0.5/1个"
+  '方解石':
+    material: CALCITE 
+    date: 0 
+    slot: 39 
+    display_name: "&f方解石" 
+    lore:
+      - "&e出售价格: 0.05/1个" 
+  '甜浆果':
+    material: SWEET_BERRIES 
+    date: 0 
+    slot: 40 
+    display_name: "&f甜浆果" 
+    lore:
+      - "&e出售价格: 0.2/1个" 
+  '发光浆果':
+    material: GLOW_BERRIES
+    date: 0 
+    slot: 41 
+    display_name: "&f发光浆果" 
+    lore:
+      - "&e出售价格: 0.2/1个"
+
+  '幻翼膜':
+    material: Phantom_Membrane
+    date: 0
+    slot: 42
+    lore: 
+      - "&e出售价格: 5/1个"
+
+  '钻石':
+    material: DIAMOND
+    date: 0
+    slot: 43
+    lore: 
+      - "&e出售价格: 25/1个"
+  '甘蔗':
+    material: SUGAR_CANE
+    date: 0
+    slot: 44
+    lore: 
+      - "&e出售价格: 1/1个"
+  '竹子':
+    material: BAMBOO
+    date: 0
+    slot: 53
+    lore: 
+      - "&e出售价格: 0.3/1个"
+
+  'back':
+    material: WHITE_STAINED_GLASS_PANE
+    date: 1
+    slot: 45
+    display_name: "&e返回上一级"
+    right_click_commands:
+      - "[player] shopmenu"
+    left_click_commands:
+      - "[player] shopmenu"    
+sweet: true

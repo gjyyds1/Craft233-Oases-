@@ -1,0 +1,28 @@
+# 开启自动更新
+auto-update: true
+on-death:
+  # 设置为true时，玩家将在死亡时丢失一个随机研究
+  reset-random-research: true
+  # 玩家死亡时重置所有研究的概率(百分比)
+  # 有效值: 0-100，设置为100总是会重置研究，0则不会重置研究
+  chance-to-reset-all-researches: 5
+
+on-research:
+  # 研究失败的概率(百分比)
+  # 有效值: 0-100，设置为100总是会失败，0则不会失败
+  chance-of-failure: 10
+
+android:
+  # 机器故障的概率(百分比)
+  # 有效值: 0-100，设置为100总是会故障，0则不会故障
+  chance-to-malfunction: 10
+  # 机器故障持续时间(秒)
+  malfunction-duration: 30
+
+# 提示消息
+messages:
+  # 可使用 %research% 来展示丢失研究的名字
+  lost-random-research: '&c你丢失了一个已解锁的研究!'
+  lost-all-research: '&c哦不!你丢失了所有的研究!'
+  research-failed: '&c研究失败! 你需要再试一次 :^)'
+  android-malfunctioned: '&c你的机器人出了点故障! 它将在一段时间后恢复工作.'

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:04:12 CST 2024
+unirest-java-parent-3.14.5.pom>https\://maven.aliyun.com/repository/public/=
+unirest-java-parent-3.14.5.pom>https\://repo1.maven.org/maven2/=
+unirest-java-parent-3.14.5.pom>repo42=

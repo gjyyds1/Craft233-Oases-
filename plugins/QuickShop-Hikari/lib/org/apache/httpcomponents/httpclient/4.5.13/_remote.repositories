@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:07:08 CST 2024
+httpclient-4.5.13.jar>https\://maven.aliyun.com/repository/public/=
+httpclient-4.5.13.jar>https\://repo1.maven.org/maven2/=
+httpclient-4.5.13.jar>repo42=
+httpclient-4.5.13.jar>repo62=
+httpclient-4.5.13.pom>https\://maven.aliyun.com/repository/public/=
+httpclient-4.5.13.pom>https\://repo1.maven.org/maven2/=
+httpclient-4.5.13.pom>repo42=
+httpclient-4.5.13.pom>repo62=

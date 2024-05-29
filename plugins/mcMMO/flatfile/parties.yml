@@ -1,0 +1,16 @@
+'1':
+  Leader: 73ed2e87-6492-3b74-bf7d-f277e83471a7|Eason
+  Locked: true
+  Level: 10
+  Xp: 393
+  Ally: ''
+  ExpShareMode: NONE
+  ItemShareMode: NONE
+  ItemShareType:
+    LOOT: true
+    MINING: true
+    HERBALISM: true
+    WOODCUTTING: true
+    MISC: true
+  Members:
+  - 73ed2e87-6492-3b74-bf7d-f277e83471a7|Eason

@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:05:45 CST 2024
+jaxen-1.1.6.jar>https\://maven.aliyun.com/repository/public/=
+jaxen-1.1.6.jar>https\://repo1.maven.org/maven2/=
+jaxen-1.1.6.jar>repo52=
+jaxen-1.1.6.pom>https\://maven.aliyun.com/repository/public/=
+jaxen-1.1.6.pom>https\://repo1.maven.org/maven2/=
+jaxen-1.1.6.pom>repo52=

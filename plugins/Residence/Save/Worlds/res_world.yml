@@ -1,0 +1,1699 @@
+Messages:
+  1:
+    LeaveMessage: 下次再见！这里是%residence
+    EnterMessage: 欢迎大大来到%owner的领地%residence,Have fun！
+  2:
+    LeaveMessage: Goodbye!
+    EnterMessage: Welcome to Eason's home!
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: true
+    door: true
+    move: true
+    anvil: true
+    destroy: true
+    admin: true
+    animalkilling: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    place: true
+    tp: true
+    table: true
+  3:
+    container: false
+    bed: false
+    door: false
+    ignite: false
+    waterflow: false
+    use: false
+    icemelt: false
+    nametag: false
+    lavaflow: false
+    healing: false
+    bank: false
+    hook: false
+    mobexpdrop: false
+    explode: false
+    snowtrail: false
+    vehicledestroy: false
+    flowinprotection: true
+    shoot: false
+    trample: false
+    animals: false
+    nmonsters: false
+    wspeed1: false
+    wspeed2: false
+    rain: false
+    grow: false
+    mobitemdrop: false
+    witherdamage: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    lever: false
+    pressure: false
+    brew: false
+    nomobs: true
+    feed: false
+    honeycomb: false
+    beacon: false
+    canimals: false
+    itemdrop: true
+    sanimals: false
+    diode: false
+    witherspawn: false
+    tnt: false
+    snowball: false
+    pistonprotection: true
+    glow: false
+    creeper: false
+    damage: false
+    note: false
+    shop: false
+    riding: false
+    title: false
+    sun: false
+    animalkilling: false
+    hotfloor: false
+    phantomspawn: false
+    button: false
+    iceform: false
+    cmonsters: false
+    honey: false
+    witherdestruction: false
+    itempickup: true
+    place: false
+    subzone: false
+    coords: false
+    fireball: false
+    table: false
+    harvest: false
+    move: false
+    shear: false
+    nanimals: false
+    piston: false
+    spread: false
+    enderpearl: false
+    fly: true
+    trade: false
+    mobkilling: false
+    build: false
+    chat: false
+    fallinprotection: true
+    leash: false
+    tp: false
+    smonsters: false
+  4:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  5:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    beacon: true
+    mobkilling: true
+    build: true
+    use: true
+    chat: true
+    destroy: true
+    tp: true
+    animalkilling: true
+  6:
+    container: true
+    move: true
+    harvest: true
+    beacon: true
+    mobkilling: true
+    build: true
+    use: true
+    chat: true
+    destroy: true
+    tp: true
+    animalkilling: true
+  7:
+    container: false
+    ignite: false
+    use: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    explode: false
+    cmonsters: false
+    vehicledestroy: false
+    nmonsters: false
+    day: false
+    harvest: false
+    move: false
+    shear: false
+    nanimals: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: true
+    nomobs: true
+    feed: true
+    fly: true
+    build: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: false
+    creeper: false
+  8:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    nomobs: true
+    feed: true
+    healing: true
+    fly: true
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    nmonsters: false
+    creeper: false
+  9:
+    container: true
+    move: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    destroy: true
+    tp: true
+    animalkilling: true
+  10:
+    container: true
+    bed: true
+    door: true
+    move: true
+    anvil: true
+    admin: true
+    destroy: true
+    lever: true
+    animalkilling: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    tp: true
+    table: true
+  11:
+    container: false
+    ignite: false
+    damage: false
+    use: false
+    title: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    explode: false
+    cmonsters: false
+    witherdestruction: false
+    vehicledestroy: false
+    animals: false
+    nmonsters: false
+    wspeed2: true
+    harvest: false
+    witherdamage: false
+    shear: false
+    nanimals: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    nomobs: true
+    feed: true
+    fly: true
+    trade: true
+    canimals: false
+    build: false
+    sanimals: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: false
+    creeper: false
+  12:
+    container: true
+    ignite: true
+    door: true
+    note: true
+    egg: true
+    use: true
+    admin: true
+    nametag: true
+    animalkilling: true
+    button: true
+    bank: true
+    hook: true
+    cake: true
+    copper: true
+    vehicledestroy: true
+    place: true
+    subzone: true
+    move: true
+    harvest: true
+    shear: true
+    destroy: true
+    lever: true
+    pressure: true
+    fly: false
+    friendlyfire: true
+    trade: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    anchor: true
+    diode: true
+    leash: true
+    tp: true
+  13:
+    container: false
+    bed: true
+    ignite: false
+    door: false
+    waterflow: true
+    egg: false
+    use: false
+    craft: true
+    decay: false
+    icemelt: false
+    healing: true
+    hook: false
+    mobexpdrop: true
+    explode: false
+    cake: false
+    snowtrail: false
+    goathorn: true
+    vehicledestroy: false
+    flowinprotection: false
+    shoot: false
+    trample: false
+    animals: true
+    nmonsters: false
+    day: false
+    flow: true
+    brush: true
+    chorustp: false
+    grow: true
+    mobitemdrop: true
+    witherdamage: false
+    firespread: false
+    destroy: false
+    pvp: false
+    pressure: false
+    lever: false
+    brew: true
+    dryup: false
+    nomobs: false
+    feed: true
+    honeycomb: true
+    beacon: false
+    canimals: true
+    itemdrop: true
+    dragongrief: false
+    sanimals: true
+    witherspawn: true
+    tnt: false
+    snowball: true
+    pistonprotection: true
+    glow: true
+    creeper: false
+    damage: false
+    anvil: true
+    riding: true
+    title: true
+    animalkilling: false
+    hotfloor: false
+    button: false
+    iceform: false
+    falldamage: false
+    cmonsters: false
+    honey: true
+    witherdestruction: false
+    copper: false
+    place: false
+    itempickup: true
+    coords: false
+    fireball: false
+    table: true
+    burn: true
+    harvest: false
+    shear: false
+    anvilbreak: false
+    enderpearl: true
+    dye: true
+    fly: false
+    trade: true
+    mobkilling: true
+    build: false
+    chat: true
+    flowerpot: true
+    anchor: false
+    enchant: true
+    fallinprotection: false
+    leash: false
+    tp: true
+    smonsters: false
+  14:
+    container: false
+    ignite: false
+    use: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    explode: false
+    cmonsters: false
+    vehicledestroy: false
+    shoot: false
+    coords: false
+    harvest: false
+    move: false
+    grow: true
+    shear: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    enderpearl: false
+    nomobs: true
+    feed: true
+    build: false
+    sanimals: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  15:
+    container: false
+    ignite: false
+    damage: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: true
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  16:
+    container: false
+    move: true
+    harvest: false
+    beacon: false
+    mobkilling: false
+    build: false
+    use: false
+    chat: false
+    destroy: false
+    lever: true
+    tp: true
+    animalkilling: false
+  17:
+    container: false
+    ignite: false
+    door: false
+    use: false
+    decay: true
+    icemelt: false
+    healing: true
+    hook: false
+    mobexpdrop: true
+    explode: false
+    vehicledestroy: false
+    trample: false
+    flowinprotection: false
+    animals: true
+    nmonsters: true
+    chorustp: false
+    grow: true
+    witherdamage: false
+    mobitemdrop: true
+    firespread: false
+    destroy: false
+    pvp: false
+    lever: false
+    nomobs: false
+    feed: true
+    honeycomb: false
+    itemdrop: true
+    sanimals: true
+    diode: false
+    witherspawn: false
+    tnt: false
+    pistonprotection: false
+    creeper: false
+    note: false
+    damage: false
+    animalkilling: false
+    phantomspawn: false
+    button: false
+    falldamage: false
+    cmonsters: true
+    witherdestruction: false
+    honey: false
+    fireball: false
+    harvest: false
+    move: true
+    shear: false
+    nanimals: true
+    enderpearl: false
+    fly: false
+    trade: false
+    mobkilling: true
+    build: false
+    fallinprotection: false
+    enchant: true
+    tp: true
+    leash: false
+    smonsters: true
+  18:
+    container: false
+    ignite: false
+    damage: false
+    use: false
+    title: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    explode: false
+    cmonsters: false
+    witherdestruction: false
+    vehicledestroy: false
+    animals: false
+    nmonsters: false
+    coords: false
+    wspeed2: true
+    harvest: false
+    move: false
+    grow: true
+    witherdamage: false
+    shear: false
+    nanimals: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    nomobs: true
+    fly: true
+    canimals: false
+    build: false
+    sanimals: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: false
+    creeper: false
+  19:
+    container: false
+    ignite: false
+    damage: false
+    waterflow: true
+    use: false
+    title: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    explode: false
+    cmonsters: false
+    witherdestruction: false
+    snowtrail: true
+    vehicledestroy: false
+    shoot: false
+    trample: false
+    animals: false
+    nmonsters: false
+    coords: false
+    wspeed2: true
+    burn: true
+    harvest: false
+    witherdamage: false
+    shear: false
+    nanimals: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: true
+    nomobs: false
+    feed: true
+    trade: true
+    canimals: false
+    build: false
+    sanimals: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: false
+    creeper: false
+  20:
+    container: true
+    ignite: false
+    damage: false
+    waterflow: true
+    use: false
+    title: false
+    animalkilling: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    explode: false
+    cmonsters: false
+    witherdestruction: false
+    snowtrail: true
+    vehicledestroy: false
+    shoot: false
+    trample: false
+    animals: false
+    nmonsters: false
+    coords: false
+    wspeed2: true
+    burn: true
+    harvest: false
+    witherdamage: false
+    grow: true
+    shear: false
+    nanimals: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    nomobs: false
+    feed: true
+    fly: true
+    trade: true
+    canimals: false
+    build: false
+    sanimals: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: false
+    creeper: false
+  21:
+    container: true
+    move: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    destroy: true
+    admin: true
+    tp: true
+    animalkilling: true
+  22:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: false
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  23:
+    container: false
+    ignite: false
+    damage: false
+    note: true
+    use: false
+    animalkilling: false
+    phantomspawn: false
+    lavaflow: true
+    healing: true
+    hook: false
+    explode: false
+    vehicledestroy: false
+    nmonsters: true
+    day: true
+    fireball: false
+    wspeed2: true
+    harvest: false
+    shear: false
+    firespread: false
+    piston: true
+    destroy: false
+    monsters: true
+    pvp: false
+    feed: true
+    fly: true
+    trade: true
+    mobkilling: true
+    build: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  24:
+    move: false
+  25:
+    move: true
+  26:
+    container: false
+    ignite: false
+    waterflow: true
+    egg: false
+    use: false
+    icemelt: false
+    nametag: true
+    lavaflow: true
+    healing: true
+    hook: false
+    explode: false
+    goathorn: true
+    vehicledestroy: false
+    trample: false
+    shoot: false
+    animals: true
+    nmonsters: false
+    wspeed2: true
+    chorustp: false
+    grow: true
+    witherdamage: false
+    firespread: false
+    destroy: false
+    pvp: false
+    lever: false
+    dryup: false
+    feed: true
+    dragongrief: false
+    diode: false
+    witherspawn: true
+    tnt: true
+    snowball: false
+    pistonprotection: true
+    creeper: false
+    damage: false
+    riding: false
+    sun: true
+    animalkilling: false
+    phantomspawn: false
+    button: false
+    iceform: false
+    falldamage: false
+    witherdestruction: false
+    fireball: false
+    table: true
+    harvest: false
+    move: false
+    shear: false
+    nanimals: true
+    piston: true
+    spread: true
+    fly: true
+    trade: true
+    build: false
+    enchant: true
+    leash: false
+    tp: true
+  27:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    monsters: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: true
+    leash: false
+    pistonprotection: true
+    tp: true
+    nmonsters: false
+    creeper: false
+    table: true
+  28:
+    container: true
+    bed: true
+    door: true
+    note: true
+    ignite: true
+    egg: true
+    anvil: true
+    use: true
+    admin: true
+    riding: true
+    nametag: true
+    animalkilling: true
+    button: true
+    bank: true
+    hook: true
+    cake: true
+    honey: true
+    goathorn: true
+    copper: true
+    vehicledestroy: true
+    itempickup: true
+    place: true
+    subzone: true
+    table: true
+    brush: true
+    chorustp: true
+    move: true
+    destroy: true
+    lever: true
+    pressure: true
+    brew: true
+    enderpearl: true
+    dye: true
+    fly: true
+    friendlyfire: true
+    honeycomb: true
+    beacon: true
+    trade: true
+    mobkilling: true
+    itemdrop: true
+    build: true
+    chat: true
+    flowerpot: true
+    anchor: true
+    enchant: true
+    diode: true
+    tp: true
+  29:
+    container: true
+    bed: true
+    door: true
+    note: true
+    ignite: true
+    egg: true
+    use: true
+    anvil: true
+    admin: true
+    riding: true
+    nametag: true
+    animalkilling: true
+    button: true
+    bank: true
+    hook: true
+    honey: true
+    cake: true
+    goathorn: true
+    copper: true
+    vehicledestroy: true
+    place: true
+    itempickup: true
+    subzone: true
+    table: true
+    brush: true
+    chorustp: true
+    harvest: true
+    move: true
+    destroy: true
+    pressure: true
+    lever: true
+    brew: true
+    enderpearl: true
+    dye: true
+    fly: true
+    friendlyfire: true
+    trade: true
+    beacon: true
+    itemdrop: true
+    mobkilling: true
+    build: true
+    chat: true
+    flowerpot: true
+    anchor: true
+    diode: true
+    tp: true
+  30:
+    container: true
+    bed: true
+    door: true
+    note: true
+    ignite: true
+    egg: true
+    anvil: true
+    use: true
+    admin: true
+    riding: true
+    nametag: true
+    button: true
+    bank: true
+    hook: true
+    honey: true
+    cake: true
+    goathorn: true
+    copper: true
+    vehicledestroy: true
+    itempickup: true
+    subzone: true
+    table: true
+    brush: true
+    chorustp: true
+    harvest: true
+    move: true
+    destroy: true
+    pressure: true
+    lever: true
+    brew: true
+    enderpearl: true
+    dye: true
+    honeycomb: true
+    fly: true
+    friendlyfire: true
+    beacon: true
+    trade: true
+    itemdrop: true
+    mobkilling: true
+    build: true
+    chat: true
+    flowerpot: true
+    anchor: true
+    enchant: true
+    diode: true
+    tp: true
+  31:
+    container: false
+    ignite: false
+    damage: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  32:
+    container: true
+    bed: true
+    door: true
+    note: true
+    ignite: true
+    egg: true
+    anvil: true
+    use: true
+    admin: true
+    riding: true
+    nametag: true
+    animalkilling: true
+    button: true
+    bank: true
+    hook: true
+    cake: true
+    honey: true
+    goathorn: true
+    copper: true
+    vehicledestroy: true
+    itempickup: true
+    place: true
+    subzone: true
+    table: true
+    brush: true
+    chorustp: true
+    move: true
+    destroy: true
+    lever: true
+    pressure: true
+    brew: true
+    enderpearl: true
+    dye: true
+    friendlyfire: true
+    honeycomb: true
+    beacon: true
+    trade: true
+    mobkilling: true
+    itemdrop: true
+    build: true
+    chat: true
+    flowerpot: true
+    anchor: true
+    enchant: true
+    diode: true
+    tp: true
+  33:
+    container: false
+    ignite: false
+    waterflow: true
+    use: false
+    decay: true
+    lavaflow: true
+    healing: true
+    mobexpdrop: true
+    explode: false
+    snowtrail: true
+    vehicledestroy: true
+    shoot: true
+    animals: true
+    nmonsters: false
+    wspeed2: true
+    flow: true
+    witherdamage: false
+    grow: true
+    mobitemdrop: true
+    firespread: false
+    destroy: false
+    monsters: true
+    pvp: false
+    nomobs: false
+    feed: true
+    canimals: true
+    sanimals: true
+    witherspawn: true
+    tnt: true
+    snowball: true
+    pistonprotection: true
+    creeper: false
+    damage: false
+    title: false
+    animalkilling: false
+    phantomspawn: false
+    falldamage: true
+    witherdestruction: false
+    cmonsters: true
+    subzone: true
+    coords: false
+    harvest: true
+    shear: false
+    nanimals: true
+    piston: true
+    spread: true
+    trade: true
+    mobkilling: true
+    build: false
+    leash: false
+    tp: true
+    smonsters: true
+  34:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: true
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  35:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    trade: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    nmonsters: true
+    creeper: false
+  36:
+    container: false
+    ignite: false
+    use: false
+    title: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    mobexpdrop: true
+    explode: false
+    cmonsters: true
+    witherdestruction: false
+    vehicledestroy: false
+    animals: true
+    nmonsters: false
+    coords: false
+    wspeed2: true
+    harvest: true
+    grow: true
+    witherdamage: false
+    mobitemdrop: true
+    shear: false
+    nanimals: true
+    firespread: false
+    destroy: false
+    monsters: true
+    pvp: false
+    feed: true
+    trade: true
+    canimals: true
+    mobkilling: true
+    build: false
+    sanimals: true
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    smonsters: true
+    creeper: false
+Residences:
+  '1':
+    TPLoc: -3192.5:64.0:-2768.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        a027db0c-0e87-397c-a8d4-35b57a615b74: 1
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 2
+      AreaFlags: 3
+      OwnerUUID: a027db0c-0e87-397c-a8d4-35b57a615b74
+      OwnerLastKnownName: FaliKy
+    CreatedOn: 1712395966507
+    Areas:
+      main: -3196:61:-2772:-3190:67:-2766
+  '1224':
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        9713e7ee-4b63-3db0-80f0-142a29dfdce4: 1
+      AreaFlags: 4
+      OwnerUUID: 9713e7ee-4b63-3db0-80f0-142a29dfdce4
+      OwnerLastKnownName: server
+    CreatedOn: 1714558010942
+    Areas:
+      main: -3285:69:-10984:-3283:75:-10982
+  '123':
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        9217bdae-ac6d-3594-91ec-4da53841c566: 1
+      AreaFlags: 4
+      OwnerUUID: 9217bdae-ac6d-3594-91ec-4da53841c566
+      OwnerLastKnownName: XXXIAOQQQIAN
+    CreatedOn: 1716017582336
+    Areas:
+      main: -26:86:-128:-20:96:-112
+  '46465156':
+    TPLoc: 71.5:68.0:-188.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4bccbc83-df6d-3b71-90cf-156d52f81c57: 1
+      AreaFlags: 4
+      OwnerUUID: 4bccbc83-df6d-3b71-90cf-156d52f81c57
+      OwnerLastKnownName: sbb
+    CreatedOn: 1714778609509
+    Areas:
+      main: 69:66:-192:72:69:-187
+  91ban:
+    TPLoc: 3005.5:71.0:325.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        5b2b23dc-4eed-37c1-8d48-a41d0676535b: 5
+        4ec3d265-5955-38ab-8658-3bb1fea21bf2: 5
+        a2392b34-942c-343c-b905-197869b2f165: 1
+        df2e6533-3e17-325c-94f8-1e250539a1eb: 6
+        b7130fb8-5d7a-3b00-8ae3-d3d22102de38: 6
+        3b15b673-aa65-3b39-9d5e-ae93358beb06: 6
+        6bee324e-8f5f-31f8-844f-4eba60001a21: 6
+      AreaFlags: 7
+      OwnerUUID: a2392b34-942c-343c-b905-197869b2f165
+      OwnerLastKnownName: Notice_9
+    CreatedOn: 1713700179538
+    Areas:
+      main: 2995:69:294:3034:98:356
+  a:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        e10973b1-9746-3790-8029-927269c573f9: 1
+      AreaFlags: 4
+      OwnerUUID: e10973b1-9746-3790-8029-927269c573f9
+      OwnerLastKnownName: SCPMTF
+    CreatedOn: 1714885297636
+    Areas:
+      main: -319:71:-48:-313:74:-43
+  baicaizhale1:
+    TPLoc: -85.5:-46.9:-51.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        78785c96-d8d9-3da9-bfb8-06ab1d4e0723: 1
+      AreaFlags: 8
+      OwnerUUID: 78785c96-d8d9-3da9-bfb8-06ab1d4e0723
+      OwnerLastKnownName: baicaizhale
+    CreatedOn: 1715468131934
+    Areas:
+      main: -85:-49:-59:-77:-46:-53
+  cigcigwithsuiyue:
+    TPLoc: -886.5:67.0:-1499.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        cc3da7f1-f6ba-35ab-8147-e20b559683fc: 9
+        5fff029e-eefe-3991-b4b5-506db2776689: 1
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 10
+      AreaFlags: 11
+      OwnerUUID: 5fff029e-eefe-3991-b4b5-506db2776689
+      OwnerLastKnownName: CN_cigcig
+    CreatedOn: 1713006383165
+    Areas:
+      main: -903:65:-1516:-872:75:-1485
+  cmfzj:
+    TPLoc: 722.5:25.0:-320.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4b35edd5-93bb-38c8-be22-2e5100c1f94f: 1
+      AreaFlags: 4
+      OwnerUUID: 4b35edd5-93bb-38c8-be22-2e5100c1f94f
+      OwnerLastKnownName: shuguang36
+    CreatedOn: 1713036184859
+    Areas:
+      main: 719:21:-327:724:29:-316
+  dogstown:
+    TPLoc: 4413.5:65.0:-1361.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        a2392b34-942c-343c-b905-197869b2f165: 1
+      AreaFlags: 4
+      OwnerUUID: a2392b34-942c-343c-b905-197869b2f165
+      OwnerLastKnownName: Notice_9
+    CreatedOn: 1713626092992
+    Areas:
+      main: 4402:62:-1378:4423:70:-1347
+  EA_home:
+    TPLoc: 169.11:69.0:-1037.47:11.7:7.31
+    Messages: 2
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        73ed2e87-6492-3b74-bf7d-f277e83471a7: 12
+        b1e0ea52-91e1-33e1-aed7-d7bfc9cfc6e6: 6
+        c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 6
+        175479a1-7f29-31a3-bc9c-28787d7b9796: 6
+        91429571-3aa0-389f-aa02-35a7e0d328cd: 6
+        aff8e286-7a9c-3341-8e25-fd3c73f3ade5: 6
+      AreaFlags: 13
+      OwnerUUID: 73ed2e87-6492-3b74-bf7d-f277e83471a7
+      OwnerLastKnownName: Eason
+    CreatedOn: 1716121251385
+    MainResidence: true
+    Areas:
+      main: 124:68:-1062:178:81:-973
+  gg:
+    TPLoc: -723.7:123.0:-481.34:25.21:173.42
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        b3da2583-29db-3bd4-a89c-fb31be1a62ee: 1
+      AreaFlags: 4
+      OwnerUUID: b3da2583-29db-3bd4-a89c-fb31be1a62ee
+      OwnerLastKnownName: Hutao_Dak826
+    CreatedOn: 1713535578985
+    Areas:
+      main: -750:121:-517:-714:124:-472
+  home:
+    TPLoc: -119.5:68.0:-103.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        af95a2aa-c137-30aa-b7cd-cf8ff68faa37: 1
+      AreaFlags: 14
+      OwnerUUID: af95a2aa-c137-30aa-b7cd-cf8ff68faa37
+      OwnerLastKnownName: TKLS_lh
+    CreatedOn: 1712283294960
+    Areas:
+      main: -128:67:-112:-112:72:-96
+  Home114514:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        643dcc31-6e57-35ab-9d2e-d8ef3588c211: 1
+      AreaFlags: 4
+      OwnerUUID: 643dcc31-6e57-35ab-9d2e-d8ef3588c211
+      OwnerLastKnownName: Charmander_WY
+    CreatedOn: 1715424875130
+    Areas:
+      main: 589:118:-1565:598:132:-1551
+  hutao:
+    TPLoc: -645.5:126.0:-507.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        b3da2583-29db-3bd4-a89c-fb31be1a62ee: 1
+      AreaFlags: 4
+      OwnerUUID: b3da2583-29db-3bd4-a89c-fb31be1a62ee
+      OwnerLastKnownName: Hutao_Dak826
+    CreatedOn: 1713667187716
+    Areas:
+      main: -652:122:-520:-640:132:-497
+  hutao2:
+    TPLoc: -645.5:139.0:-507.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        b3da2583-29db-3bd4-a89c-fb31be1a62ee: 1
+      AreaFlags: 4
+      OwnerUUID: b3da2583-29db-3bd4-a89c-fb31be1a62ee
+      OwnerLastKnownName: Hutao_Dak826
+    CreatedOn: 1713667787811
+    Areas:
+      main: -652:133:-520:-640:147:-497
+  ikun:
+    TPLoc: -729.5:72.0:4891.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Subzones:
+      bang:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            82c507d8-285d-395e-b596-e7eacf93a954: 1
+          AreaFlags: 15
+          OwnerUUID: 82c507d8-285d-395e-b596-e7eacf93a954
+          OwnerLastKnownName: ORhH_year
+        CreatedOn: 1716083168272
+        Areas:
+          bang: -703:78:4902:-690:84:4911
+    Permissions:
+      PlayerFlags:
+        c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 16
+        82c507d8-285d-395e-b596-e7eacf93a954: 1
+        7e23aad7-2128-3345-9480-616551c6fad1: 6
+      AreaFlags: 17
+      OwnerUUID: 82c507d8-285d-395e-b596-e7eacf93a954
+      OwnerLastKnownName: ORhH_year
+    CreatedOn: 1715932544840
+    Areas:
+      main: -776:57:4803:-584:133:4947
+  jia:
+    TPLoc: -149.5:103.0:221.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        fac1a99a-f6f8-3f9d-a955-412fcd088acd: 1
+      AreaFlags: 4
+      OwnerUUID: fac1a99a-f6f8-3f9d-a955-412fcd088acd
+      OwnerLastKnownName: TouringSand963
+    CreatedOn: 1712641036810
+    Areas:
+      main: -164:84:208:-137:107:234
+  JianXian-Home:
+    TPLoc: 53.5:202.0:311.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 1
+      AreaFlags: 18
+      OwnerUUID: 52a05a03-844a-3e9e-9d2d-2bb156cd074c
+      OwnerLastKnownName: JianXian_TWT
+    CreatedOn: 1712648636357
+    Areas:
+      main: 23:189:281:83:211:341
+  JianXian-Island:
+    TPLoc: -721.5:125.0:-394.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 1
+      AreaFlags: 19
+      OwnerUUID: 52a05a03-844a-3e9e-9d2d-2bb156cd074c
+      OwnerLastKnownName: JianXian_TWT
+    CreatedOn: 1713538475352
+    Areas:
+      main: -759:114:-427:-685:139:-364
+  JianXian-Island1:
+    TPLoc: -641.5:132.0:-405.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        7960ed1d-6b63-36d4-8028-c926c18c3b4d: 6
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 1
+      AreaFlags: 20
+      OwnerUUID: 52a05a03-844a-3e9e-9d2d-2bb156cd074c
+      OwnerLastKnownName: JianXian_TWT
+    CreatedOn: 1713591437694
+    Areas:
+      main: -652:119:-414:-632:134:-398
+  jj:
+    TPLoc: 2730.5:109.1:-6492.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        004959f0-7f91-3975-b652-6feba2f21880: 1
+      AreaFlags: 4
+      OwnerUUID: 004959f0-7f91-3975-b652-6feba2f21880
+      OwnerLastKnownName: Qi_Gai
+    CreatedOn: 1712399759703
+    Areas:
+      main: 2594:108:-6492:2821:159:-6398
+  jjj:
+    TPLoc: 2639.5:68.0:-6421.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        5d30a4c8-5230-3b28-bfd3-82820e05dea7: 21
+        1def3312-3cb4-3f8d-a3ba-1cc5c852acf8: 21
+        004959f0-7f91-3975-b652-6feba2f21880: 1
+        1c4a3601-57e0-3d0d-8893-f8724dbc5620: 21
+      AreaFlags: 4
+      OwnerUUID: 004959f0-7f91-3975-b652-6feba2f21880
+      OwnerLastKnownName: Qi_Gai
+    CreatedOn: 1712400946440
+    Areas:
+      main: 2632:67:-6428:2645:70:-6416
+  lbs:
+    TPLoc: 115.22:210.5:3538.2:28.5:36.1
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        9a7086ab-e716-34af-8ce8-ee68b23cea67: 22
+      AreaFlags: 23
+      OwnerUUID: 9a7086ab-e716-34af-8ce8-ee68b23cea67
+      OwnerLastKnownName: LH_longhun
+    CreatedOn: 1712938392405
+    Areas:
+      main: 100:62:3530:136:250:3561
+  lh:
+    TPLoc: 647.69:123.0:-528.23:14.03:84.1
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        9a7086ab-e716-34af-8ce8-ee68b23cea67: 22
+        9713e7ee-4b63-3db0-80f0-142a29dfdce4: 24
+        b0e93119-0e5a-38d3-a9b3-9342ea1afd9c: 25
+      AreaFlags: 26
+      OwnerUUID: 9a7086ab-e716-34af-8ce8-ee68b23cea67
+      OwnerLastKnownName: LH_longhun
+    CreatedOn: 1712326956706
+    Areas:
+      main: 622:99:-615:697:214:-513
+  neokoni-land:
+    TPLoc: -772.93:126.0:559.54:2.55:88.05
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        a595fa1d-7823-3327-ac0d-cfaa28f43c2e: 1
+      AreaFlags: 4
+      OwnerUUID: a595fa1d-7823-3327-ac0d-cfaa28f43c2e
+      OwnerLastKnownName: neokoni
+    CreatedOn: 1713112895061
+    Areas:
+      main: -802:123:490:-745:128:569
+  qw:
+    TPLoc: 175.55:71.0:-333.24:19.8:173.1
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        0ecb63a2-b16d-3e6d-8f20-df1c5880a6ef: 1
+      AreaFlags: 4
+      OwnerUUID: 0ecb63a2-b16d-3e6d-8f20-df1c5880a6ef
+      OwnerLastKnownName: '1234543'
+    CreatedOn: 1712928370943
+    Areas:
+      main: 168:70:-349:181:74:-324
+  sbsbsbsbsbsb:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4bccbc83-df6d-3b71-90cf-156d52f81c57: 1
+      AreaFlags: 4
+      OwnerUUID: 4bccbc83-df6d-3b71-90cf-156d52f81c57
+      OwnerLastKnownName: sbb
+    CreatedOn: 1714777013649
+    Areas:
+      main: 1:78:-76:8:84:-63
+  shabbyhouse:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        7dc82aef-2c16-3cec-9364-7e68dcc10901: 1
+      AreaFlags: 4
+      OwnerUUID: 7dc82aef-2c16-3cec-9364-7e68dcc10901
+      OwnerLastKnownName: BE_ming_104513
+    CreatedOn: 1716883958182
+    Areas:
+      main: -785:68:4948:-779:72:4954
+  shabifuwuqi:
+    TPLoc: -12.8:208.0:23.06:53.55:89.1
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        1def3312-3cb4-3f8d-a3ba-1cc5c852acf8: 21
+        004959f0-7f91-3975-b652-6feba2f21880: 1
+      AreaFlags: 27
+      OwnerUUID: 004959f0-7f91-3975-b652-6feba2f21880
+      OwnerLastKnownName: Qi_Gai
+    CreatedOn: 1712410057976
+    Areas:
+      main: -28:205:9:16:217:61
+  shuguangdj:
+    TPLoc: 601.5:129.0:-486.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4b35edd5-93bb-38c8-be22-2e5100c1f94f: 1
+        a74de37d-da65-39d1-98b0-7596b2ef1edd: 28
+        b3da2583-29db-3bd4-a89c-fb31be1a62ee: 29
+      AreaFlags: 4
+      OwnerUUID: 4b35edd5-93bb-38c8-be22-2e5100c1f94f
+      OwnerLastKnownName: shuguang36
+    CreatedOn: 1713065003399
+    Areas:
+      main: 590:122:-497:611:132:-477
+  shuguangdyzc:
+    TPLoc: 599.5:76.0:-483.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4b35edd5-93bb-38c8-be22-2e5100c1f94f: 1
+        b3da2583-29db-3bd4-a89c-fb31be1a62ee: 30
+      AreaFlags: 4
+      OwnerUUID: 4b35edd5-93bb-38c8-be22-2e5100c1f94f
+      OwnerLastKnownName: shuguang36
+    CreatedOn: 1713537487775
+    Areas:
+      main: 595:69:-489:602:78:-479
+  Super-Base:
+    TPLoc: -3847.49:70.0:-1845.36:10.35:-0.3
+    Messages: 1
+    BlockSellPrice: 0.02
+    Subzones:
+      bee:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            52a05a03-844a-3e9e-9d2d-2bb156cd074c: 1
+          AreaFlags: 31
+          OwnerUUID: 52a05a03-844a-3e9e-9d2d-2bb156cd074c
+          OwnerLastKnownName: JianXian_TWT
+        CreatedOn: 1714551949777
+        Areas:
+          bee: -3848:67:-1863:-3836:72:-1853
+    Permissions:
+      PlayerFlags:
+        c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 1
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 32
+      AreaFlags: 33
+      OwnerUUID: c72416fe-6a5a-35a8-a0a2-0574ca4d7c13
+      OwnerLastKnownName: smokejumper
+    CreatedOn: 1712899664368
+    Areas:
+      main: -4086:-64:-2089:-3587:233:-1590
+  Super-Base-2:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Subzones:
+      solidification:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 1
+          AreaFlags: 34
+          OwnerUUID: c72416fe-6a5a-35a8-a0a2-0574ca4d7c13
+          OwnerLastKnownName: smokejumper
+        CreatedOn: 1716801569094
+        Areas:
+          solidification: -3825:81:-1491:-3812:108:-1473
+      tree:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 1
+          AreaFlags: 34
+          OwnerUUID: c72416fe-6a5a-35a8-a0a2-0574ca4d7c13
+          OwnerLastKnownName: smokejumper
+        CreatedOn: 1716715126607
+        Areas:
+          tree: -3874:62:-1493:-3857:123:-1479
+      monster:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 1
+          AreaFlags: 35
+          OwnerUUID: c72416fe-6a5a-35a8-a0a2-0574ca4d7c13
+          OwnerLastKnownName: smokejumper
+        CreatedOn: 1716710205528
+        Areas:
+          monster: -3795:95:-1393:-3775:123:-1373
+    Permissions:
+      PlayerFlags:
+        c72416fe-6a5a-35a8-a0a2-0574ca4d7c13: 1
+        52a05a03-844a-3e9e-9d2d-2bb156cd074c: 6
+      AreaFlags: 36
+      OwnerUUID: c72416fe-6a5a-35a8-a0a2-0574ca4d7c13
+      OwnerLastKnownName: smokejumper
+    CreatedOn: 1716646966117
+    Areas:
+      main: -4114:-64:-1589:-3615:233:-1090
+  world:
+    TPLoc: -18.19:70.0:27.71:1.8:-179.55
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        b1153850-1625-3654-b5bd-cf65452507a9: 1
+      AreaFlags: 4
+      OwnerUUID: b1153850-1625-3654-b5bd-cf65452507a9
+      OwnerLastKnownName: DuLin0816
+    CreatedOn: 1711114239491
+    Areas:
+      main: -81:-34:-36:66:204:94
+  zhongtianqu:
+    Messages: 1
+    BlockSellPrice: 0.02
+    Permissions:
+      PlayerFlags:
+        4bccbc83-df6d-3b71-90cf-156d52f81c57: 1
+      AreaFlags: 4
+      OwnerUUID: 4bccbc83-df6d-3b71-90cf-156d52f81c57
+      OwnerLastKnownName: sbb
+    CreatedOn: 1714776608426
+    Areas:
+      main: 11:78:-77:15:80:-73

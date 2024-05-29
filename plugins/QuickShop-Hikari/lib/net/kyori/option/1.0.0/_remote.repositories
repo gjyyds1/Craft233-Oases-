@@ -1,0 +1,12 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 10 18:14:04 CST 2024
+option-1.0.0.jar>https\://maven.aliyun.com/repository/public/=
+option-1.0.0.jar>https\://repo1.maven.org/maven2/=
+option-1.0.0.jar>repo126=
+option-1.0.0.jar>repo131=
+option-1.0.0.jar>repo136=
+option-1.0.0.pom>https\://maven.aliyun.com/repository/public/=
+option-1.0.0.pom>https\://repo1.maven.org/maven2/=
+option-1.0.0.pom>repo127=
+option-1.0.0.pom>repo132=
+option-1.0.0.pom>repo137=
