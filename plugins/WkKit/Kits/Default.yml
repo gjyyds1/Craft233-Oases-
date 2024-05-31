@@ -1,10 +1,16 @@
-fumo:
-  Name: §6Server Kit
+61kit:
+  Name: §a 61 &b礼包
   Icon: REDSTONE
   Lore:
-  - 'null'
-  Item: []
+  - '&a 61儿童节快乐！'
+  - '&b 这个，礼物！'
+  Item: 
+  - '{Count:61b,id:"minecraft:bread"}'
+  - '{Count:61b,id:"minecraft:iron_ingot"}'
+  - '{Count:61b,id:"minecraft:gold_ingot"}'
+  - '{Count:1b,id:"minecraft:diamond_boots"}'
+  - '{Count:61b,id:"minecraft:apple"}'
   Times: 1
   Commands:
   - CMD:xp add {player} 500 levels
-  - CMD:eco give {player} 50000
+  - CMD:money give {player} 6161
